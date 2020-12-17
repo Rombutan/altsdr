@@ -1,0 +1,42 @@
+a- from Main spectrum, by holding r/l/u/d to go to those menus
+
+1- Main spectrum/display
+  1.1- Tune with r/l/rl_sel bottons
+  1.2- Change band by holding r/l_sel and r/l bottons
+  1.3- Mode with u/d/ud_sel
+  1.4- vol with ud_sel + u/d
+
+b- non Spectrum navigation works like this: u/d for element select (like move through different things you can change); ud_sel to select an element; r/l to cycle through options; ud_sel to deselect element; rl_sel to fast return to main menu with current values; long hold rl_sel to undo changes
+  
+2- Up menu (audio)
+  2.1- volume_default(int[0:21])
+  2.2- mute(true/false)
+  2.3- audo_output(3.5mm aux/internal)
+  2.4- mic_input(3.5mm aux/intearnal mems)
+  2.5- VOX(true/false)
+  2.x- future audio options i havent thought of yet
+
+3- Down menu (rf)
+  3.1- add_sample_rate(int[100k:3.6M])
+  3.2- dac_sample_rate(int[40k:1M])
+  3.3- routing_submenu
+    3.3.1- on_tx_tx_goes:(rf1/rf2/rf3)
+    3.3.2- on_tx_rx_goes:(rf1/rf2/rf3)
+    3.3.3- on_rx_tx_goes:(rf1/rf2/rf3)
+    2.2.4- on_rx_rx_goes:(rf1/rf2/rf3)
+  3.4- rf PA gain(int[1:?47?]
+
+4- Left menu (ui)
+  4.1- text_size(int[1:4])
+  4.2- spectrum_width(int[10k:150k])
+  4.3- waterfall_%(int[0:100])
+  4.4- waterfall_color_range(str)
+  4.5- element_pos_submenu
+    4.5.1- bat_pos(tr/tl/bl/br)
+    4.5.2- freq/band_pos(b/t)
+
+5- Right menu (battery, host computer)
+  5.1- usb_pc_behaviour(dumb_rx_fft, dumb_rx_raw, smart_trx, dumb_audio, smart_audio)
+  5.2- bat_indicator(voltage, percent)
+  5.3- bat_size_for_percent_mah(int)
+  4.x- stuff to add
