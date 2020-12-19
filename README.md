@@ -12,7 +12,7 @@ The altsdr will have:
 4. 100khz rf bandwidth with built in processor
 5. 20khz transmit bandwidth
 6. voice modes and popular digital modes such as ft8, jt65, aprs etc.
-7. 1 to 200mhz base bandwidth
+7. 1 to 200mhz base frequency range
 8. expandable transmit and receive performance with modular daughter-boards
 9. a small built in battery good for a few hours
 10. a built in solar charger (no panels) for said battery
