@@ -1,7 +1,7 @@
 # altsdr
 An altoid tin sized sdr for hams
 
-The idea behind this is to fill the gap between commercial radios, sdr and otherwise that are forbiddingly expensive and do not provide useful repair or modification guides. And relatively cheap sdr's like the hackrf, limesdr, and others which while being great for hacking around, don't have enough output power to be useful for hams and *must* be used with a computer.
+The idea behind this is to fill the gap between commercial radios, sdr and otherwise, that are forbiddingly expensive and do not provide useful repair or modification guides. And relatively cheap sdr's like the hackrf, limesdr, and others which while being great for hacking around, don't have enough output power to be useful for hams and *must* be used with a computer.
 
 
 The altsdr will have:
