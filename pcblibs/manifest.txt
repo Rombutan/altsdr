@@ -1,9 +1,10 @@
 already here:
   STM32H745ZIT6
-
+  SKY13453-485LF
+  MAX3523
 
 coming soon:
-  SI5351A
   AT24C16D-SSHM-B
-  MAX2611EUS
-  SKY13453-385LF
+
+
+*incomplete*
