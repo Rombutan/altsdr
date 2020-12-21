@@ -598,4 +598,45 @@ X IF2 6 400 -100 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
+# power_ports_+3v
+#
+DEF power_ports_+3v P 0 40 Y Y 1 F P
+F0 "P" 0 0 50 H V C CNN
+F1 "power_ports_+3v" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -100 -250 100 -250 N
+P 2 0 1 0 -50 -200 50 -200 N
+X ~ ~ 0 -350 100 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+# power_ports_+5v
+#
+DEF power_ports_+5v P 0 40 Y Y 1 F P
+F0 "P" 0 0 50 H V C CNN
+F1 "power_ports_+5v" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -100 -250 100 -250 N
+P 2 0 1 0 -50 -200 50 -200 N
+X ~ ~ 0 -350 100 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+# power_ports_GND_
+#
+DEF power_ports_GND_ P 0 40 Y Y 1 F P
+F0 "P" 0 50 50 H V C CNN
+F1 "power_ports_GND_" 0 -50 50 H V C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+P 2 0 1 0 -100 -100 100 -100 N
+X ~ ~ 0 -200 100 U 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
 #End Library
