@@ -194,27 +194,12 @@ Wire Wire Line
 	5300 4950 5300 5250
 Wire Wire Line
 	5300 5250 700  5250
-$Comp
-L Si514:Si514 U?
-U 1 1 5FEAAF12
-P 7000 10700
-F 0 "U?" H 7050 10925 50  0000 C CNN
-F 1 "Si514" H 7050 10834 50  0000 C CNN
-F 2 "" H 6750 10800 50  0001 C CNN
-F 3 "" H 6750 10800 50  0001 C CNN
-	1    7000 10700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8750 10250 8650 10250
 Wire Wire Line
 	8750 11000 8750 10250
 Wire Wire Line
-	7500 11000 8750 11000
-Wire Wire Line
 	8650 10850 8650 10400
-Wire Wire Line
-	7500 10850 8650 10850
 $Comp
 L pe4140b:pe4140b U?
 U 1 1 5FEAAF1D
@@ -254,162 +239,14 @@ F 12 "Active" H 18150 7700 60  0001 L CNN "Status"
 	1    17950 6500
 	1    0    0    -1  
 $EndComp
-$Comp
-L dk_USB-DVI-HDMI-Connectors:CX70M-24P1 J?
-U 1 1 5FEF5B43
-P 20200 5300
-F 0 "J?" H 20200 6335 50  0000 C CNN
-F 1 "CX70M-24P1" H 20200 6244 50  0000 C CNN
-F 2 "digikey-footprints:USB-C_Female_CX70M-24P1" H 20400 5500 60  0001 L CNN
-F 3 "https://www.hirose.com/product/document?clcode=CL0480-0304-0-00&productname=CX70M-24P1&series=CX&documenttype=2DDrawing&lang=en&documentid=D141189_en" H 20400 5600 60  0001 L CNN
-F 4 "H125292CT-ND" H 20400 5700 60  0001 L CNN "Digi-Key_PN"
-F 5 "CX70M-24P1" H 20400 5800 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 20400 5900 60  0001 L CNN "Category"
-F 7 "USB, DVI, HDMI Connectors" H 20400 6000 60  0001 L CNN "Family"
-F 8 "https://www.hirose.com/product/document?clcode=CL0480-0304-0-00&productname=CX70M-24P1&series=CX&documenttype=2DDrawing&lang=en&documentid=D141189_en" H 20400 6100 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/hirose-electric-co-ltd/CX70M-24P1/H125292CT-ND/6036267" H 20400 6200 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN RCPT USB3.0 TYPEC 24POS SMD" H 20400 6300 60  0001 L CNN "Description"
-F 11 "Hirose Electric Co Ltd" H 20400 6400 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 20400 6500 60  0001 L CNN "Status"
-	1    20200 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L 9-2176091-2:9-2176091-2 R?
-U 1 1 5FF0B9B5
-P 21300 4950
-F 0 "R?" V 21254 5055 50  0000 L CNN
-F 1 "5.1k" V 21345 5055 50  0000 L CNN
-F 2 "RESC2012X65N" H 21100 5200 50  0001 L BNN
-F 3 "" H 21300 4950 50  0001 L BNN
-F 4 "9-2176091-2" H 21100 5200 50  0001 L BNN "Comment"
-	1    21300 4950
-	0    1    1    0   
-$EndComp
-$Comp
-L 9-2176091-2:9-2176091-2 R?
-U 1 1 5FF175E2
-P 19200 5450
-F 0 "R?" V 19154 5555 50  0000 L CNN
-F 1 "5.1k" V 19245 5555 50  0000 L CNN
-F 2 "RESC2012X65N" H 19000 5700 50  0001 L BNN
-F 3 "" H 19200 5450 50  0001 L BNN
-F 4 "9-2176091-2" H 19000 5700 50  0001 L BNN "Comment"
-	1    19200 5450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	19700 5850 19400 5850
-Wire Wire Line
-	19200 5800 19200 5850
-Connection ~ 19200 5850
-Wire Wire Line
-	19700 5450 19450 5450
-Wire Wire Line
-	19450 5450 19450 5050
-Wire Wire Line
-	19450 5050 19200 5050
-Wire Wire Line
-	21300 4550 20700 4550
-Wire Wire Line
-	20700 4550 20700 4750
-Wire Wire Line
-	21300 5350 21100 5350
-Wire Wire Line
-	21100 5350 21100 5150
-Wire Wire Line
-	21100 5150 20700 5150
-Wire Wire Line
-	20700 5350 21050 5350
-Wire Wire Line
-	21050 5350 21050 6300
-Wire Wire Line
-	21050 6300 19500 6300
-Wire Wire Line
-	19500 6300 19500 5250
-Wire Wire Line
-	19500 5250 19700 5250
-Wire Wire Line
-	19700 5350 19550 5350
-Wire Wire Line
-	19550 5350 19550 6400
-Wire Wire Line
-	19550 6400 21000 6400
-Wire Wire Line
-	21000 6400 21000 5250
-Wire Wire Line
-	21000 5250 20700 5250
-Wire Wire Line
-	19700 4750 19700 4200
-Wire Wire Line
-	19700 4200 20250 4200
-Wire Wire Line
-	20700 4200 20700 4550
-Connection ~ 20700 4550
-Wire Wire Line
-	20700 5850 20700 6500
-Wire Wire Line
-	20700 6500 20100 6500
-Wire Wire Line
-	19400 6500 19400 5850
-Connection ~ 19400 5850
-Wire Wire Line
-	19400 5850 19200 5850
-Wire Wire Line
-	20700 5050 20850 5050
-Wire Wire Line
-	20850 5050 20850 5550
-Wire Wire Line
-	20850 5550 20700 5550
-Wire Wire Line
-	19700 5050 19600 5050
-Wire Wire Line
-	19600 5050 19600 5550
-Wire Wire Line
-	19600 5550 19700 5550
-Wire Wire Line
-	19600 5550 19600 7300
-Wire Wire Line
-	19600 7300 17450 7300
 Wire Wire Line
 	17450 7300 17450 6500
-Connection ~ 19600 5550
-Wire Wire Line
-	20850 5550 20850 7300
-Wire Wire Line
-	20850 7300 19600 7300
-Connection ~ 20850 5550
-Connection ~ 19600 7300
-Wire Wire Line
-	6350 6800 4050 6800
-Wire Wire Line
-	6250 6850 6250 10700
-Wire Wire Line
-	6250 6850 3950 6850
-Wire Wire Line
-	6600 10700 6250 10700
-Wire Wire Line
-	6600 10850 6350 10850
-Wire Wire Line
-	6350 10850 6350 6800
 Wire Wire Line
 	1200 2400 750  2400
 Wire Wire Line
 	750  2400 750  7950
 Wire Wire Line
-	750  7950 21000 7950
-Wire Wire Line
-	21000 7950 21000 6400
-Connection ~ 21000 6400
-Wire Wire Line
-	19500 6300 19500 7900
-Wire Wire Line
-	19500 7900 800  7900
-Wire Wire Line
-	800  7900 800  2300
-Wire Wire Line
 	800  2300 1200 2300
-Connection ~ 19500 6300
 Wire Wire Line
 	1200 1500 850  1500
 Wire Wire Line
@@ -443,34 +280,6 @@ Connection ~ 16550 1600
 Wire Wire Line
 	16550 1600 16550 1650
 $Comp
-L power_ports:GND_ P?
-U 1 1 5FE1E507
-P 20100 6700
-F 0 "P?" H 19972 6496 50  0000 R CNN
-F 1 "GND_" H 19972 6587 50  0000 R CNN
-F 2 "" H 20100 6750 50  0001 C CNN
-F 3 "" H 20100 6750 50  0001 C CNN
-	1    20100 6700
-	-1   0    0    1   
-$EndComp
-Connection ~ 20100 6500
-Wire Wire Line
-	20100 6500 19400 6500
-$Comp
-L power_ports:GND_ P?
-U 1 1 5FE21E03
-P 20250 4000
-F 0 "P?" H 20378 3889 50  0000 L CNN
-F 1 "GND_" H 20378 3798 50  0000 L CNN
-F 2 "" H 20250 4050 50  0001 C CNN
-F 3 "" H 20250 4050 50  0001 C CNN
-	1    20250 4000
-	1    0    0    -1  
-$EndComp
-Connection ~ 20250 4200
-Wire Wire Line
-	20250 4200 20700 4200
-$Comp
 L power_ports:+5v P?
 U 1 1 5FE2D177
 P 17100 7300
@@ -481,7 +290,6 @@ F 3 "" H 17100 7300 50  0001 C CNN
 	1    17100 7300
 	0    -1   -1   0   
 $EndComp
-Connection ~ 17450 7300
 Wire Wire Line
 	18350 6500 18350 6550
 $Comp
@@ -509,17 +317,6 @@ $EndComp
 Connection ~ 18350 6550
 Wire Wire Line
 	18350 6550 18350 6600
-$Comp
-L power_ports:GND_ P?
-U 1 1 5FEA22F7
-P 6400 11000
-F 0 "P?" V 6354 10928 50  0000 L CNN
-F 1 "GND_" V 6445 10928 50  0000 L CNN
-F 2 "" H 6400 11050 50  0001 C CNN
-F 3 "" H 6400 11050 50  0001 C CNN
-	1    6400 11000
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power_ports:GND_ P?
 U 1 1 5FEF19BD
@@ -734,4 +531,202 @@ Wire Wire Line
 	7850 5550 8400 5550
 Wire Wire Line
 	8400 5550 8400 5500
+$Comp
+L dk_Balun:MABA-007159-000000 T?
+U 1 1 5FFF465C
+P 9650 10650
+F 0 "T?" H 9650 11037 60  0000 C CNN
+F 1 "MABA-007159-000000" H 9650 10931 60  0000 C CNN
+F 2 "digikey-footprints:SMD-5-6_3.83x2.79mm" H 9850 10850 60  0001 L CNN
+F 3 "http://cdn.macom.com/datasheets/MABA-007159-000000.pdf" H 9850 10950 60  0001 L CNN
+F 4 "1465-1302-1-ND" H 9850 11050 60  0001 L CNN "Digi-Key_PN"
+F 5 "MABA-007159-000000" H 9850 11150 60  0001 L CNN "MPN"
+F 6 "RF/IF and RFID" H 9850 11250 60  0001 L CNN "Category"
+F 7 "Balun" H 9850 11350 60  0001 L CNN "Family"
+F 8 "http://cdn.macom.com/datasheets/MABA-007159-000000.pdf" H 9850 11450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/m-a-com-technology-solutions/MABA-007159-000000/1465-1302-1-ND/4429999" H 9850 11550 60  0001 L CNN "DK_Detail_Page"
+F 10 "BALUN 4.5MHZ-3GHZ 1:1 6SMD FLAT" H 9850 11650 60  0001 L CNN "Description"
+F 11 "M/A-Com Technology Solutions" H 9850 11750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9850 11850 60  0001 L CNN "Status"
+	1    9650 10650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 9600 9050 9600
+Wire Wire Line
+	9050 9600 9050 10550
+Wire Wire Line
+	9050 10550 9350 10550
+Wire Wire Line
+	7200 9550 10200 9550
+Wire Wire Line
+	10200 9550 10200 10550
+Wire Wire Line
+	10200 10550 9950 10550
+$Comp
+L power_ports:GND_ P?
+U 1 1 6000B3BE
+P 9350 10950
+F 0 "P?" V 9304 10878 50  0000 L CNN
+F 1 "GND_" V 9395 10878 50  0000 L CNN
+F 2 "" H 9350 11000 50  0001 C CNN
+F 3 "" H 9350 11000 50  0001 C CNN
+	1    9350 10950
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_USB-DVI-HDMI-Connectors:690-005-299-043 J?
+U 1 1 6003EF54
+P 18750 5950
+F 0 "J?" H 19375 7302 60  0000 C CNN
+F 1 "690-005-299-043" H 19375 7196 60  0000 C CNN
+F 2 "digikey-footprints:USB_Mini_B_Female_690-005-299-043" H 18950 6150 60  0001 L CNN
+F 3 "http://files.edac.net/690-005-299-043.pdf" H 18950 6250 60  0001 L CNN
+F 4 "151-1206-1-ND" H 18950 6350 60  0001 L CNN "Digi-Key_PN"
+F 5 "690-005-299-043" H 18950 6450 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 18950 6550 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 18950 6650 60  0001 L CNN "Family"
+F 8 "http://files.edac.net/690-005-299-043.pdf" H 18950 6750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/edac-inc/690-005-299-043/151-1206-1-ND/4312192" H 18950 6850 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB2.0 MINI B SMD R/A" H 18950 6950 60  0001 L CNN "Description"
+F 11 "EDAC Inc." H 18950 7050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 18950 7150 60  0001 L CNN "Status"
+	1    18750 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_ports:GND_ P?
+U 1 1 6004247C
+P 19150 5950
+F 0 "P?" V 19104 5878 50  0000 L CNN
+F 1 "GND_" V 19195 5878 50  0000 L CNN
+F 2 "" H 19150 6000 50  0001 C CNN
+F 3 "" H 19150 6000 50  0001 C CNN
+	1    19150 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power_ports:+5v P?
+U 1 1 6005C072
+P 20250 4800
+F 0 "P?" V 20515 4517 50  0000 C CNN
+F 1 "+5v" V 20424 4517 50  0000 C CNN
+F 2 "" H 20250 4800 50  0001 C CNN
+F 3 "" H 20250 4800 50  0001 C CNN
+	1    20250 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19900 4800 19650 4800
+Wire Wire Line
+	19650 4800 19650 5050
+$Comp
+L power_ports:GND_ P?
+U 1 1 60066D7E
+P 19650 5650
+F 0 "P?" V 19604 5578 50  0000 L CNN
+F 1 "GND_" V 19695 5578 50  0000 L CNN
+F 2 "" H 19650 5700 50  0001 C CNN
+F 3 "" H 19650 5700 50  0001 C CNN
+	1    19650 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021 J?
+U 1 1 6006D6E2
+P 19750 5250
+F 0 "J?" V 19841 5122 50  0000 R CNN
+F 1 "22-23-2021" V 19750 5122 50  0000 R CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 19950 5450 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 19950 5550 60  0001 L CNN
+F 4 "WM4200-ND" H 19950 5650 60  0001 L CNN "Digi-Key_PN"
+F 5 "22-23-2021" H 19950 5750 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 19950 5850 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 19950 5950 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 19950 6050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/molex/22-23-2021/WM4200-ND/26667" H 19950 6150 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.54MM" H 19950 6250 60  0001 L CNN "Description"
+F 11 "Molex" H 19950 6350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 19950 6450 60  0001 L CNN "Status"
+	1    19750 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021 J?
+U 1 1 60072FBF
+P 650 8150
+F 0 "J?" H 828 8204 50  0000 L CNN
+F 1 "22-23-2021" H 828 8113 50  0000 L CNN
+F 2 "digikey-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 850 8350 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 850 8450 60  0001 L CNN
+F 4 "WM4200-ND" H 850 8550 60  0001 L CNN "Digi-Key_PN"
+F 5 "22-23-2021" H 850 8650 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 850 8750 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 850 8850 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 850 8950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/molex/22-23-2021/WM4200-ND/26667" H 850 9050 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 2POS 2.54MM" H 850 9150 60  0001 L CNN "Description"
+F 11 "Molex" H 850 9250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 850 9350 60  0001 L CNN "Status"
+	1    650  8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  7950 650  7950
+Wire Wire Line
+	650  7950 650  8050
+Wire Wire Line
+	800  8050 750  8050
+Wire Wire Line
+	800  2300 800  8050
+Wire Wire Line
+	6450 6200 6450 11000
+Wire Wire Line
+	6450 11000 8750 11000
+Connection ~ 6450 6200
+Wire Wire Line
+	6350 6050 6350 10850
+Wire Wire Line
+	6350 10850 8650 10850
+Connection ~ 6350 6050
+$Comp
+L dk_Coaxial-Connectors-RF:142-0701-801 J?
+U 1 1 600A6F4C
+P 14550 7650
+F 0 "J?" H 14628 7875 50  0000 C CNN
+F 1 "142-0701-801" H 14628 7784 50  0000 C CNN
+F 2 "digikey-footprints:RF_SMA_BoardEdge_142-0701-801" H 14750 7850 60  0001 L CNN
+F 3 "http://www.belfuse.com/resources/Johnson/drawings/dr-1420701801.pdf" H 14750 7950 60  0001 L CNN
+F 4 "J502-ND" H 14750 8050 60  0001 L CNN "Digi-Key_PN"
+F 5 "142-0701-801" H 14750 8150 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 14750 8250 60  0001 L CNN "Category"
+F 7 "Coaxial Connectors (RF)" H 14750 8350 60  0001 L CNN "Family"
+F 8 "http://www.belfuse.com/resources/Johnson/drawings/dr-1420701801.pdf" H 14750 8450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/142-0701-801/J502-ND/35280" H 14750 8550 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN SMA JACK STR 50OHM EDGE MNT" H 14750 8650 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 14750 8750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 14750 8850 60  0001 L CNN "Status"
+	1    14550 7650
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Coaxial-Connectors-RF:142-0701-801 J?
+U 1 1 600C399F
+P 14550 8600
+F 0 "J?" H 14628 8825 50  0000 C CNN
+F 1 "142-0701-801" H 14628 8734 50  0000 C CNN
+F 2 "digikey-footprints:RF_SMA_BoardEdge_142-0701-801" H 14750 8800 60  0001 L CNN
+F 3 "http://www.belfuse.com/resources/Johnson/drawings/dr-1420701801.pdf" H 14750 8900 60  0001 L CNN
+F 4 "J502-ND" H 14750 9000 60  0001 L CNN "Digi-Key_PN"
+F 5 "142-0701-801" H 14750 9100 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 14750 9200 60  0001 L CNN "Category"
+F 7 "Coaxial Connectors (RF)" H 14750 9300 60  0001 L CNN "Family"
+F 8 "http://www.belfuse.com/resources/Johnson/drawings/dr-1420701801.pdf" H 14750 9400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/142-0701-801/J502-ND/35280" H 14750 9500 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN SMA JACK STR 50OHM EDGE MNT" H 14750 9600 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 14750 9700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 14750 9800 60  0001 L CNN "Status"
+	1    14550 8600
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
