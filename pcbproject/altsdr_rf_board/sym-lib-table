@@ -1,4 +1,6 @@
 (sym_lib_table
   (lib (name MAX3523ETP_)(type Legacy)(uri /home/lucag/Documents/GitHub/altsdr/pcblibs/MAX3523ETP_/MAX3523ETP_.lib)(options "")(descr ""))
   (lib (name SKY13414-485LF)(type Legacy)(uri /home/lucag/Documents/GitHub/altsdr/pcblibs/SKY13414-485LF/SKY13414-485LF.lib)(options "")(descr ""))
+  (lib (name 0603CS-5N1XJLU)(type Legacy)(uri /home/lucag/Documents/GitHub/altsdr/pcblibs/0603CS-5N1XJLU.lib)(options "")(descr ""))
+  (lib (name MABA-007159-000000)(type Legacy)(uri /home/lucag/Documents/GitHub/altsdr/pcblibs/MABA-007159-000000/MABA-007159-000000.lib)(options "")(descr ""))
 )
