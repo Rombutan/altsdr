@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CORDIC_Sin_DMA,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:altsdr-DAC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:proto-altsdr,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:cpp_DAC_attempt Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DAC_GenerateConstantSignal_TriggerSW_LP_Init,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DAC_GenerateWaveform_TriggerHW_Init,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DAC_SignalsGeneration2,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DAC_GenerateConstantSignal_TriggerSW_Init,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:pls-work Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CORDIC_Sin_DMA/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CORDIC_Sin_DMA/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:proto-altsdr/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:proto-altsdr/activeLaunchTarget=null\:---

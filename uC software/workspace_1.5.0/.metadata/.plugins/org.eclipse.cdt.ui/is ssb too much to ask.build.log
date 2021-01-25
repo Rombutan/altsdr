@@ -1,0 +1,20 @@
+16:44:11 **** Incremental Build of configuration Debug for project is ssb too much to ask ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "is ssb too much to ask.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/STM32CubeIDE/workspace_1.5.0/is ssb too much to ask/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="is ssb too much to ask.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: is ssb too much to ask.elf
+ 
+arm-none-eabi-size   is\ ssb\ too\ much\ to\ ask.elf 
+arm-none-eabi-objdump -h -S  is\ ssb\ too\ much\ to\ ask.elf  > "is ssb too much to ask.list"
+arm-none-eabi-objcopy  -O binary  is\ ssb\ too\ much\ to\ ask.elf  "is ssb too much to ask.bin"
+   text	   data	    bss	    dec	    hex	filename
+  12524	     20	   1732	  14276	   37c4	is ssb too much to ask.elf
+Finished building: default.size.stdout
+ 
+Finished building: is ssb too much to ask.bin
+ 
+Finished building: is ssb too much to ask.list
+ 
+
+16:44:12 Build Finished. 0 errors, 0 warnings. (took 664ms)
+

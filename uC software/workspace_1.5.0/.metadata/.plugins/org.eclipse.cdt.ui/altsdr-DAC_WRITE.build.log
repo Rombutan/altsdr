@@ -1,0 +1,10 @@
+12:12:40 **** Incremental Build of configuration Debug for project altsdr-DAC_WRITE ****
+make -j4 all 
+arm-none-eabi-size   altsdr-DAC_WRITE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14956	     24	   1752	  16732	   415c	altsdr-DAC_WRITE.elf
+Finished building: default.size.stdout
+ 
+
+12:12:41 Build Finished. 0 errors, 0 warnings. (took 171ms)
+

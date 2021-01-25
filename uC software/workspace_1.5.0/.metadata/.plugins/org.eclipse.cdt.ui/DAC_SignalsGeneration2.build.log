@@ -1,0 +1,20 @@
+16:00:47 **** Incremental Build of configuration Debug for project DAC_SignalsGeneration2 ****
+make -j4 all 
+arm-none-eabi-gcc "/home/lucag/STM32CubeIDE/workspace_1.5.0/DAC_SignalsGeneration2/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DUSE_NUCLEO_64 -DDEBUG -c -I../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../../Inc -I../../Drivers/STM32G4xx_HAL_Driver/Inc -I../../Drivers/BSP/STM32G4xx_Nucleo -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/main.o"
+arm-none-eabi-gcc -o "DAC_SignalsGeneration2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/STM32CubeIDE/workspace_1.5.0/DAC_SignalsGeneration2/STM32CubeIDE/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DAC_SignalsGeneration2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DAC_SignalsGeneration2.elf
+ 
+arm-none-eabi-objdump -h -S  DAC_SignalsGeneration2.elf  > "DAC_SignalsGeneration2.list"
+arm-none-eabi-objcopy  -O binary  DAC_SignalsGeneration2.elf  "DAC_SignalsGeneration2.bin"
+arm-none-eabi-size   DAC_SignalsGeneration2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13936	     40	   1896	  15872	   3e00	DAC_SignalsGeneration2.elf
+Finished building: default.size.stdout
+ 
+Finished building: DAC_SignalsGeneration2.bin
+ 
+Finished building: DAC_SignalsGeneration2.list
+ 
+
+16:00:48 Build Finished. 0 errors, 0 warnings. (took 468ms)
+

@@ -1,0 +1,10 @@
+17:19:15 **** Incremental Build of configuration Debug for project CORDIC_Sin_DMA ****
+make -j4 all 
+arm-none-eabi-size   CORDIC_Sin_DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8788	    536	   2088	  11412	   2c94	CORDIC_Sin_DMA.elf
+Finished building: default.size.stdout
+ 
+
+17:19:15 Build Finished. 0 errors, 0 warnings. (took 167ms)
+

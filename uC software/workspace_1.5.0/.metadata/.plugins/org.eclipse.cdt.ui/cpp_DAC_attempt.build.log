@@ -1,0 +1,20 @@
+14:25:58 **** Incremental Build of configuration Debug for project cpp_DAC_attempt ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "cpp_DAC_attempt.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/STM32CubeIDE/workspace_1.5.0/cpp_DAC_attempt/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cpp_DAC_attempt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: cpp_DAC_attempt.elf
+ 
+arm-none-eabi-objdump -h -S  cpp_DAC_attempt.elf  > "cpp_DAC_attempt.list"
+arm-none-eabi-objcopy  -O binary  cpp_DAC_attempt.elf  "cpp_DAC_attempt.bin"
+arm-none-eabi-size   cpp_DAC_attempt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17460	     20	   1900	  19380	   4bb4	cpp_DAC_attempt.elf
+Finished building: default.size.stdout
+ 
+Finished building: cpp_DAC_attempt.bin
+ 
+Finished building: cpp_DAC_attempt.list
+ 
+
+14:25:59 Build Finished. 0 errors, 0 warnings. (took 583ms)
+

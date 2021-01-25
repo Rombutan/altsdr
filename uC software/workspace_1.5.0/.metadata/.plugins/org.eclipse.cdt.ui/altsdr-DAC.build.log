@@ -1,0 +1,20 @@
+13:42:16 **** Incremental Build of configuration Debug for project altsdr-DAC ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "altsdr-DAC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/STM32CubeIDE/workspace_1.5.0/altsdr-DAC/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="altsdr-DAC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: altsdr-DAC.elf
+ 
+arm-none-eabi-objdump -h -S  altsdr-DAC.elf  > "altsdr-DAC.list"
+arm-none-eabi-objcopy  -O binary  altsdr-DAC.elf  "altsdr-DAC.bin"
+arm-none-eabi-size   altsdr-DAC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12784	     20	   1748	  14552	   38d8	altsdr-DAC.elf
+Finished building: default.size.stdout
+ 
+Finished building: altsdr-DAC.bin
+ 
+Finished building: altsdr-DAC.list
+ 
+
+13:42:16 Build Finished. 0 errors, 0 warnings. (took 472ms)
+

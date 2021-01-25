@@ -1,0 +1,31 @@
+15:26:30 **** Incremental Build of configuration Debug for project DAC_GenerateWaveform_TriggerHW_Init ****
+make -j4 all 
+arm-none-eabi-gcc "/home/lucag/STM32CubeIDE/workspace_1.5.0/DAC_GenerateWaveform_TriggerHW_Init/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-DLSI_VALUE=32000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' '-DLSE_STARTUP_TIMEOUT=5000' -DDEBUG '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DEXTERNAL_CLOCK_VALUE=12288000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32G474xx '-DHSE_VALUE=24000000' -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../../Inc -I../../Drivers/STM32G4xx_HAL_Driver/Inc -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/main.o"
+/home/lucag/STM32CubeIDE/workspace_1.5.0/DAC_GenerateWaveform_TriggerHW_Init/Src/main.c: In function 'main':
+/home/lucag/STM32CubeIDE/workspace_1.5.0/DAC_GenerateWaveform_TriggerHW_Init/Src/main.c:58:46: error: 'WaveformSine_12bits_64samples' undeclared (first use in this function); did you mean 'WaveformSine_12bits_32samples'?
+ #define WAVEFORM_SAMPLES_SIZE       (sizeof (WaveformSine_12bits_64samples) / sizeof (uint16_t))
+                                              ^
+/home/lucag/STM32CubeIDE/workspace_1.5.0/DAC_GenerateWaveform_TriggerHW_Init/Src/main.c:227:24: note: in expansion of macro 'WAVEFORM_SAMPLES_SIZE'
+                        WAVEFORM_SAMPLES_SIZE);
+                        ^~~~~~~~~~~~~~~~~~~~~
+/home/lucag/STM32CubeIDE/workspace_1.5.0/DAC_GenerateWaveform_TriggerHW_Init/Src/main.c:58:46: note: each undeclared identifier is reported only once for each function it appears in
+ #define WAVEFORM_SAMPLES_SIZE       (sizeof (WaveformSine_12bits_64samples) / sizeof (uint16_t))
+                                              ^
+/home/lucag/STM32CubeIDE/workspace_1.5.0/DAC_GenerateWaveform_TriggerHW_Init/Src/main.c:227:24: note: in expansion of macro 'WAVEFORM_SAMPLES_SIZE'
+                        WAVEFORM_SAMPLES_SIZE);
+                        ^~~~~~~~~~~~~~~~~~~~~
+/home/lucag/STM32CubeIDE/workspace_1.5.0/DAC_GenerateWaveform_TriggerHW_Init/Src/main.c: In function 'TIM_PrescalerReloadCalculation':
+/home/lucag/STM32CubeIDE/workspace_1.5.0/DAC_GenerateWaveform_TriggerHW_Init/Src/main.c:58:46: error: 'WaveformSine_12bits_64samples' undeclared (first use in this function); did you mean 'WaveformSine_12bits_32samples'?
+ #define WAVEFORM_SAMPLES_SIZE       (sizeof (WaveformSine_12bits_64samples) / sizeof (uint16_t))
+                                              ^
+/home/lucag/STM32CubeIDE/workspace_1.5.0/DAC_GenerateWaveform_TriggerHW_Init/Src/main.c:63:71: note: in expansion of macro 'WAVEFORM_SAMPLES_SIZE'
+ #define WAVEFORM_TIMER_FREQUENCY                (WAVEFORM_FREQUENCY * WAVEFORM_SAMPLES_SIZE)
+                                                                       ^~~~~~~~~~~~~~~~~~~~~
+/home/lucag/STM32CubeIDE/workspace_1.5.0/DAC_GenerateWaveform_TriggerHW_Init/Src/main.c:683:62: note: in expansion of macro 'WAVEFORM_TIMER_FREQUENCY'
+   timer_reload = (timer_clock_frequency / (timer_prescaler * WAVEFORM_TIMER_FREQUENCY));
+                                                              ^~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Application/User/subdir.mk:27: Application/User/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+15:26:30 Build Failed. 3 errors, 0 warnings. (took 317ms)
+
