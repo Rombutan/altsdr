@@ -5582,3 +5582,193 @@ Finished building: pls-work.bin
  
 Finished building: pls-work.list
  
+13:58:25 **** Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+13:58:37 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:01:52 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:06:32 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:06:40 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:12:14 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:30:26 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:36:33 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:36:45 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:37:04 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:37:11 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:37:55 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:37:58 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:38:02 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:38:16 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:38:18 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:38:42 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+14:39:06 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:62:392: warning: excess elements in array initializer
+   49,53,57,61,66,70,75,80,85,90,95,101,106,112,118,124,130,136,142,149,156,162,169,176,184,191,198,206,214,222,229,238,246,254,262,271,280,288,297,306,315,325,334,343,353,363,372,382,392,402,412,422,433,443,454,464,475,486,496,507,518,529,540,552,563,574,586,597,609,620,632,644,655,667,679,691,703,715,727,739,751,764,776,788,800,813,825,837,850,862,875,887,900,912,925,937,950,962,975,987,1000,};
+                                                                                                                                                                                                                                                                                                                                                                                                        ^~~~
+../Core/Src/main.c:62:392: note: (near initialization for 'sinewave')
+../Core/Src/main.c:66:193: warning: excess elements in array initializer
+   49,57,66,75,85,95,106,118,130,142,156,169,184,198,214,229,246,262,280,297,315,334,353,372,392,412,433,454,475,496,518,540,563,586,609,632,655,679,703,727,751,776,800,825,850,875,900,925,950,975,1000,};
+                                                                                                                                                                                                 ^~~
+../Core/Src/main.c:66:193: note: (near initialization for 'sinewave2')
+../Core/Src/main.c:66:197: warning: excess elements in array initializer
+   49,57,66,75,85,95,106,118,130,142,156,169,184,198,214,229,246,262,280,297,315,334,353,372,392,412,433,454,475,496,518,540,563,586,609,632,655,679,703,727,751,776,800,825,850,875,900,925,950,975,1000,};
+                                                                                                                                                                                                     ^~~~
+../Core/Src/main.c:66:197: note: (near initialization for 'sinewave2')
+arm-none-eabi-gcc -o "pls-work.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/pls-work/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pls-work.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: pls-work.elf
+ 
+arm-none-eabi-objdump -h -S  pls-work.elf  > "pls-work.list"
+arm-none-eabi-objcopy  -O binary  pls-work.elf  "pls-work.bin"
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+Finished building: pls-work.bin
+ 
+Finished building: pls-work.list
+ 
+15:01:03 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+15:01:34 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+15:01:35 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+15:02:11 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+17:01:36 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 
+17:07:31 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+Finished building: default.size.stdout
+ 

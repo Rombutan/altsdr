@@ -1,0 +1,15 @@
+stm32g4xx_nucleo.c:124:9:BSP_GetVersion	4	static
+stm32g4xx_nucleo.c:133:16:BSP_GetBoardName	4	static
+stm32g4xx_nucleo.c:142:16:BSP_GetBoardID	4	static
+stm32g4xx_nucleo.c:154:9:BSP_LED_Init	40	static
+stm32g4xx_nucleo.c:181:9:BSP_LED_DeInit	16	static
+stm32g4xx_nucleo.c:199:9:BSP_LED_On	16	static
+stm32g4xx_nucleo.c:213:9:BSP_LED_Off	16	static
+stm32g4xx_nucleo.c:227:9:BSP_LED_Toggle	16	static
+stm32g4xx_nucleo.c:241:9:BSP_LED_GetState	16	static
+stm32g4xx_nucleo.c:259:9:BSP_PB_Init	40	static
+stm32g4xx_nucleo.c:305:9:BSP_PB_DeInit	16	static
+stm32g4xx_nucleo.c:320:9:BSP_PB_GetState	16	static
+stm32g4xx_nucleo.c:330:6:BSP_PB_IRQHandler	16	static
+stm32g4xx_nucleo.c:340:13:BSP_PB_Callback	16	static
+stm32g4xx_nucleo.c:564:13:BUTTON_USER_EXTI_Callback	8	static
