@@ -1,0 +1,28 @@
+12:32:46 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:850:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:872:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+arm-none-eabi-gcc -o "SI5351a test 2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SI5351a test 2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SI5351a test 2.elf
+ 
+arm-none-eabi-objdump -h -S  SI5351a\ test\ 2.elf  > "SI5351a test 2.list"
+arm-none-eabi-objcopy  -O binary  SI5351a\ test\ 2.elf  "SI5351a test 2.bin"
+arm-none-eabi-size   SI5351a\ test\ 2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14652	     20	   1844	  16516	   4084	SI5351a test 2.elf
+Finished building: default.size.stdout
+ 
+Finished building: SI5351a test 2.bin
+ 
+Finished building: SI5351a test 2.list
+ 
+
+12:32:47 Build Finished. 0 errors, 2 warnings. (took 427ms)
+

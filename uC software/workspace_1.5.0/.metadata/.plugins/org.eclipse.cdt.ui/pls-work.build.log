@@ -1,10 +1,10 @@
-17:07:31 **** Incremental Build of configuration Debug for project pls-work ****
+11:38:18 **** Incremental Build of configuration Debug for project pls-work ****
 make -j4 all 
 arm-none-eabi-size   pls-work.elf 
    text	   data	    bss	    dec	    hex	filename
-  12896	   1020	   2900	  16816	   41b0	pls-work.elf
+  13700	     20	   1964	  15684	   3d44	pls-work.elf
 Finished building: default.size.stdout
  
 
-17:07:31 Build Finished. 0 errors, 0 warnings. (took 143ms)
+11:38:18 Build Finished. 0 errors, 0 warnings. (took 119ms)
 

@@ -1,0 +1,253 @@
+10:57:55 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:3: warning: implicit declaration of function 'si5351_Init'; did you mean 'MX_I2C1_Init'? [-Wimplicit-function-declaration]
+   si5351_Init();
+   ^~~~~~~~~~~
+   MX_I2C1_Init
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'si5351_setupPLLInt' [-Wimplicit-function-declaration]
+   si5351_setupPLLInt(SI5351_PLL_A, 32);
+   ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:101:22: error: 'SI5351_PLL_A' undeclared (first use in this function)
+   si5351_setupPLLInt(SI5351_PLL_A, 32);
+                      ^~~~~~~~~~~~
+../Core/Src/main.c:101:22: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:102:3: warning: implicit declaration of function 'si5351_setupMultisynthInt' [-Wimplicit-function-declaration]
+   si5351_setupMultisynthInt(0, SI5351_PLL_A, 50);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:103:3: warning: implicit declaration of function 'si5351_setupRdiv' [-Wimplicit-function-declaration]
+   si5351_setupRdiv(0, SI5351_R_DIV_1);
+   ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:103:23: error: 'SI5351_R_DIV_1' undeclared (first use in this function); did you mean 'SI5351_PLL_A'?
+   si5351_setupRdiv(0, SI5351_R_DIV_1);
+                       ^~~~~~~~~~~~~~
+                       SI5351_PLL_A
+../Core/Src/main.c:104:3: warning: implicit declaration of function 'si5351_setupPLL' [-Wimplicit-function-declaration]
+   si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:104:19: error: 'SI5351_PLL_B' undeclared (first use in this function); did you mean 'SI5351_PLL_A'?
+   si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+                   ^~~~~~~~~~~~
+                   SI5351_PLL_A
+../Core/Src/main.c:105:3: warning: implicit declaration of function 'si5351_setupMultisynth' [-Wimplicit-function-declaration]
+   si5351_setupMultisynth(2, SI5351_PLL_B, 1336, 0, 1);
+   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:106:23: error: 'SI5351_R_DIV_16' undeclared (first use in this function); did you mean 'SI5351_R_DIV_1'?
+   si5351_setupRdiv(2, SI5351_R_DIV_16);
+                       ^~~~~~~~~~~~~~~
+                       SI5351_R_DIV_1
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'si5351_enableOutputs' [-Wimplicit-function-declaration]
+   si5351_enableOutputs(0xFF);
+   ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:307:1: error: unknown type name 'err_t'
+ err_t si5351_Init(void)
+ ^~~~~
+../Core/Src/main.c: In function 'si5351_Init':
+../Core/Src/main.c:313:4: error: 'm_si5351Config' undeclared (first use in this function); did you mean 'si5351_Init'?
+    m_si5351Config.initialised     = 0;
+    ^~~~~~~~~~~~~~
+    si5351_Init
+../Core/Src/main.c:314:37: error: 'SI5351_CRYSTAL_FREQ_25MHZ' undeclared (first use in this function)
+    m_si5351Config.crystalFreq     = SI5351_CRYSTAL_FREQ_25MHZ;
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:315:37: error: 'SI5351_CRYSTAL_LOAD_10PF' undeclared (first use in this function); did you mean 'SI5351_CRYSTAL_FREQ_25MHZ'?
+    m_si5351Config.crystalLoad     = SI5351_CRYSTAL_LOAD_10PF;
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+                                     SI5351_CRYSTAL_FREQ_25MHZ
+../Core/Src/main.c:331:3: warning: implicit declaration of function 'ASSERT_STATUS'; did you mean 'IS_UART_STATE'? [-Wimplicit-function-declaration]
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+   ^~~~~~~~~~~~~
+   IS_UART_STATE
+../Core/Src/main.c:331:17: warning: implicit declaration of function 'si5351_write8'; did you mean 'si5351_Init'? [-Wimplicit-function-declaration]
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+                 ^~~~~~~~~~~~~
+                 si5351_Init
+../Core/Src/main.c:331:31: error: 'SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL' undeclared (first use in this function)
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:334:31: error: 'SI5351_REGISTER_16_CLK0_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_16_CLK0_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL
+../Core/Src/main.c:335:31: error: 'SI5351_REGISTER_17_CLK1_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_16_CLK0_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_17_CLK1_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_16_CLK0_CONTROL
+../Core/Src/main.c:336:31: error: 'SI5351_REGISTER_18_CLK2_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_17_CLK1_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_18_CLK2_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_17_CLK1_CONTROL
+../Core/Src/main.c:337:31: error: 'SI5351_REGISTER_19_CLK3_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_18_CLK2_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_19_CLK3_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_18_CLK2_CONTROL
+../Core/Src/main.c:338:31: error: 'SI5351_REGISTER_20_CLK4_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_19_CLK3_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_20_CLK4_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_19_CLK3_CONTROL
+../Core/Src/main.c:339:31: error: 'SI5351_REGISTER_21_CLK5_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_20_CLK4_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_21_CLK5_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_20_CLK4_CONTROL
+../Core/Src/main.c:340:31: error: 'SI5351_REGISTER_22_CLK6_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_21_CLK5_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_22_CLK6_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_21_CLK5_CONTROL
+../Core/Src/main.c:341:31: error: 'SI5351_REGISTER_23_CLK7_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_22_CLK6_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_23_CLK7_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_22_CLK6_CONTROL
+../Core/Src/main.c:344:31: error: 'SI5351_REGISTER_183_CRYSTAL_INTERNAL_LOAD_CAPACITANCE' undeclared (first use in this function)
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_183_CRYSTAL_INTERNAL_LOAD_CAPACITANCE,
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:361:10: error: 'ERROR_NONE' undeclared (first use in this function); did you mean 'ERROR'?
+   return ERROR_NONE;
+          ^~~~~~~~~~
+          ERROR
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:375:1: error: unknown type name 'err_t'
+ err_t si5351_setupPLLInt(si5351PLL_t pll, uint8_t mult)
+ ^~~~~
+../Core/Src/main.c:375:26: error: unknown type name 'si5351PLL_t'
+ err_t si5351_setupPLLInt(si5351PLL_t pll, uint8_t mult)
+                          ^~~~~~~~~~~
+../Core/Src/main.c:410:1: error: unknown type name 'err_t'
+ err_t si5351_setupPLL(si5351PLL_t pll,
+ ^~~~~
+../Core/Src/main.c:410:23: error: unknown type name 'si5351PLL_t'
+ err_t si5351_setupPLL(si5351PLL_t pll,
+                       ^~~~~~~~~~~
+../Core/Src/main.c:507:1: error: unknown type name 'err_t'
+ err_t si5351_setupMultisynthInt(uint8_t               output,
+ ^~~~~
+../Core/Src/main.c:508:43: error: unknown type name 'si5351PLL_t'
+                                           si5351PLL_t           pllSource,
+                                           ^~~~~~~~~~~
+../Core/Src/main.c:509:43: error: unknown type name 'si5351MultisynthDiv_t'
+                                           si5351MultisynthDiv_t div)
+                                           ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:515:1: error: unknown type name 'err_t'
+ err_t si5351_setupRdiv(uint8_t  output, si5351RDiv_t div) {
+ ^~~~~
+../Core/Src/main.c:515:41: error: unknown type name 'si5351RDiv_t'
+ err_t si5351_setupRdiv(uint8_t  output, si5351RDiv_t div) {
+                                         ^~~~~~~~~~~~
+../Core/Src/main.c:643:1: error: unknown type name 'err_t'
+ err_t si5351_setupMultisynth(uint8_t     output,
+ ^~~~~
+../Core/Src/main.c:644:40: error: unknown type name 'si5351PLL_t'
+                                        si5351PLL_t pllSource,
+                                        ^~~~~~~~~~~
+../Core/Src/main.c:792:1: error: unknown type name 'err_t'
+ err_t si5351_enableOutputs(uint8_t enabled)
+ ^~~~~
+../Core/Src/main.c:792:7: error: conflicting types for 'si5351_enableOutputs'
+ err_t si5351_enableOutputs(uint8_t enabled)
+       ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:793:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'si5351_enableOutputs' was here
+   si5351_enableOutputs(0xFF);
+   ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'si5351_enableOutputs':
+../Core/Src/main.c:795:3: warning: implicit declaration of function 'ASSERT'; did you mean '__STRT'? [-Wimplicit-function-declaration]
+   ASSERT(m_si5351Config.initialised, ERROR_DEVICENOTINITIALISED);
+   ^~~~~~
+   __STRT
+../Core/Src/main.c:795:10: error: 'm_si5351Config' undeclared (first use in this function); did you mean 'si5351_Init'?
+   ASSERT(m_si5351Config.initialised, ERROR_DEVICENOTINITIALISED);
+          ^~~~~~~~~~~~~~
+          si5351_Init
+../Core/Src/main.c:795:38: error: 'ERROR_DEVICENOTINITIALISED' undeclared (first use in this function)
+   ASSERT(m_si5351Config.initialised, ERROR_DEVICENOTINITIALISED);
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:798:31: error: 'SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL' undeclared (first use in this function)
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, enabled ? 0x00: 0xFF));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:800:10: error: 'ERROR_NONE' undeclared (first use in this function); did you mean 'ERROR'?
+   return ERROR_NONE;
+          ^~~~~~~~~~
+          ERROR
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:812:1: error: unknown type name 'err_t'
+ err_t si5351_write8 (uint8_t reg, uint8_t value)
+ ^~~~~
+../Core/Src/main.c:812:7: error: conflicting types for 'si5351_write8'
+ err_t si5351_write8 (uint8_t reg, uint8_t value)
+       ^~~~~~~~~~~~~
+../Core/Src/main.c:813:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../Core/Src/main.c:331:17: note: previous implicit declaration of 'si5351_write8' was here
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+                 ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:816:50: error: 'SI5351_ADDRESS' undeclared (first use in this function); did you mean 'CIR_BYTE1_ADDRESS'?
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                                  ^~~~~~~~~~~~~~
+                                                  CIR_BYTE1_ADDRESS
+../Core/Src/main.c:826:10: error: 'ERROR_NONE' undeclared (first use in this function); did you mean 'ERROR'?
+   return ERROR_NONE;
+          ^~~~~~~~~~
+          ERROR
+../Core/Src/main.c:814:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:834:1: error: unknown type name 'err_t'
+ err_t si5351_read8(uint8_t reg, uint8_t *value)
+ ^~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:838:50: error: 'SI5351_ADDRESS' undeclared (first use in this function); did you mean 'CIR_BYTE1_ADDRESS'?
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                                  ^~~~~~~~~~~~~~
+                                                  CIR_BYTE1_ADDRESS
+../Core/Src/main.c:848:10: error: 'ERROR_NONE' undeclared (first use in this function); did you mean 'ERROR'?
+   return ERROR_NONE;
+          ^~~~~~~~~~
+          ERROR
+../Core/Src/main.c:836:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_Init':
+../Core/Src/main.c:362:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Core/Src/main.c: In function 'si5351_enableOutputs':
+../Core/Src/main.c:801:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:827:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:849:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+10:57:56 Build Failed. 48 errors, 18 warnings. (took 818ms)
+

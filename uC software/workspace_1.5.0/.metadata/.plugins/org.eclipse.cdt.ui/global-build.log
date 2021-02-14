@@ -5772,3 +5772,1808 @@ arm-none-eabi-size   pls-work.elf
   12896	   1020	   2900	  16816	   41b0	pls-work.elf
 Finished building: default.size.stdout
  
+21:38:25 **** Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32g474retx.d" -MT"Core/Startup/startup_stm32g474retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32g474retx.o" "../Core/Startup/startup_stm32g474retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:96:3: warning: implicit declaration of function 'si5351_Init'; did you mean 'MX_I2C1_Init'? [-Wimplicit-function-declaration]
+   si5351_Init();
+   ^~~~~~~~~~~
+   MX_I2C1_Init
+../Core/Src/main.c:97:3: warning: implicit declaration of function 'si5351_setupPLLInt' [-Wimplicit-function-declaration]
+   si5351_setupPLLInt(SI5351_PLL_A, 32);
+   ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:97:22: error: 'SI5351_PLL_A' undeclared (first use in this function)
+   si5351_setupPLLInt(SI5351_PLL_A, 32);
+                      ^~~~~~~~~~~~
+../Core/Src/main.c:97:22: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:49:10: fatal error: stm32f4xx_hal.h: No such file or directory
+ #include "stm32f4xx_hal.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:98:3: warning: implicit declaration of function 'si5351_setupMultisynthInt' [-Wimplicit-function-declaration]
+   si5351_setupMultisynthInt(0, SI5351_PLL_A, 50);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:99:3: warning: implicit declaration of function 'si5351_setupRdiv' [-Wimplicit-function-declaration]
+   si5351_setupRdiv(0, SI5351_R_DIV_1);
+   ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:99:23: error: 'SI5351_R_DIV_1' undeclared (first use in this function); did you mean 'SI5351_PLL_A'?
+   si5351_setupRdiv(0, SI5351_R_DIV_1);
+                       ^~~~~~~~~~~~~~
+                       SI5351_PLL_A
+../Core/Src/main.c:100:3: warning: implicit declaration of function 'si5351_setupPLL' [-Wimplicit-function-declaration]
+   si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:100:19: error: 'SI5351_PLL_B' undeclared (first use in this function); did you mean 'SI5351_PLL_A'?
+   si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+                   ^~~~~~~~~~~~
+                   SI5351_PLL_A
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'si5351_setupMultisynth' [-Wimplicit-function-declaration]
+   si5351_setupMultisynth(2, SI5351_PLL_B, 1336, 0, 1);
+   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:102:23: error: 'SI5351_R_DIV_16' undeclared (first use in this function); did you mean 'SI5351_R_DIV_1'?
+   si5351_setupRdiv(2, SI5351_R_DIV_16);
+                       ^~~~~~~~~~~~~~~
+                       SI5351_R_DIV_1
+../Core/Src/main.c:103:3: warning: implicit declaration of function 'si5351_enableOutputs' [-Wimplicit-function-declaration]
+   si5351_enableOutputs(0xFF);
+   ^~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+21:40:04 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g4xx_hal_msp.d" -MT"Core/Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g4xx_it.d" -MT"Core/Src/stm32g4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_it.o"
+../Core/Src/si5351.c:49:10: fatal error: stm32g474_hal.h: No such file or directory
+ #include "stm32g474_hal.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:96:3: warning: implicit declaration of function 'si5351_Init'; did you mean 'MX_I2C1_Init'? [-Wimplicit-function-declaration]
+   si5351_Init();
+   ^~~~~~~~~~~
+   MX_I2C1_Init
+../Core/Src/main.c:97:3: warning: implicit declaration of function 'si5351_setupPLLInt' [-Wimplicit-function-declaration]
+   si5351_setupPLLInt(SI5351_PLL_A, 32);
+   ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:97:22: error: 'SI5351_PLL_A' undeclared (first use in this function)
+   si5351_setupPLLInt(SI5351_PLL_A, 32);
+                      ^~~~~~~~~~~~
+../Core/Src/main.c:97:22: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:98:3: warning: implicit declaration of function 'si5351_setupMultisynthInt' [-Wimplicit-function-declaration]
+   si5351_setupMultisynthInt(0, SI5351_PLL_A, 50);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:99:3: warning: implicit declaration of function 'si5351_setupRdiv' [-Wimplicit-function-declaration]
+   si5351_setupRdiv(0, SI5351_R_DIV_1);
+   ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:99:23: error: 'SI5351_R_DIV_1' undeclared (first use in this function); did you mean 'SI5351_PLL_A'?
+   si5351_setupRdiv(0, SI5351_R_DIV_1);
+                       ^~~~~~~~~~~~~~
+                       SI5351_PLL_A
+../Core/Src/main.c:100:3: warning: implicit declaration of function 'si5351_setupPLL' [-Wimplicit-function-declaration]
+   si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:100:19: error: 'SI5351_PLL_B' undeclared (first use in this function); did you mean 'SI5351_PLL_A'?
+   si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+                   ^~~~~~~~~~~~
+                   SI5351_PLL_A
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'si5351_setupMultisynth' [-Wimplicit-function-declaration]
+   si5351_setupMultisynth(2, SI5351_PLL_B, 1336, 0, 1);
+   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:102:23: error: 'SI5351_R_DIV_16' undeclared (first use in this function); did you mean 'SI5351_R_DIV_1'?
+   si5351_setupRdiv(2, SI5351_R_DIV_16);
+                       ^~~~~~~~~~~~~~~
+                       SI5351_R_DIV_1
+../Core/Src/main.c:103:3: warning: implicit declaration of function 'si5351_enableOutputs' [-Wimplicit-function-declaration]
+   si5351_enableOutputs(0xFF);
+   ^~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+21:41:04 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32g4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32g4xx.d" -MT"Core/Src/system_stm32g4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32g4xx.o"
+../Core/Src/si5351.c:49:10: fatal error: stm32g474_hal.h: No such file or directory
+ #include "stm32g474_hal.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+21:43:29 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c:49:10: fatal error: stm32g4_hal.h: No such file or directory
+ #include "stm32g4_hal.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+21:44:42 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+21:49:34 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+22:00:18 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:31: warning: passing argument 1 of 'HAL_I2C_IsDeviceReady' makes pointer from integer without a cast [-Wint-conversion]
+  while (HAL_I2C_IsDeviceReady((uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                               ^
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/si5351.c:47:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:614:19: note: expected 'I2C_HandleTypeDef * {aka struct __I2C_HandleTypeDef *}' but argument is of type 'short unsigned int'
+ HAL_StatusTypeDef HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint32_t Trials,
+                   ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/si5351.c:569:9: error: too few arguments to function 'HAL_I2C_IsDeviceReady'
+  while (HAL_I2C_IsDeviceReady((uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/si5351.c:47:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:614:19: note: declared here
+ HAL_StatusTypeDef HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint32_t Trials,
+                   ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/si5351.c:571:32: warning: passing argument 1 of 'HAL_I2C_Mem_Write' makes pointer from integer without a cast [-Wint-conversion]
+     status = HAL_I2C_Mem_Write((uint8_t)(SI5351_ADDRESS<<1),  // i2c address, left aligned
+                                ^
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/si5351.c:47:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:610:19: note: expected 'I2C_HandleTypeDef * {aka struct __I2C_HandleTypeDef *}' but argument is of type 'unsigned char'
+ HAL_StatusTypeDef HAL_I2C_Mem_Write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+                   ^~~~~~~~~~~~~~~~~
+../Core/Src/si5351.c:574:10: warning: passing argument 4 of 'HAL_I2C_Mem_Write' makes integer from pointer without a cast [-Wint-conversion]
+          (uint8_t*)(&value),    // write returned data to this variable
+          ^
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/si5351.c:47:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:610:19: note: expected 'uint16_t {aka short unsigned int}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ HAL_StatusTypeDef HAL_I2C_Mem_Write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+                   ^~~~~~~~~~~~~~~~~
+../Core/Src/si5351.c:575:10: warning: passing argument 5 of 'HAL_I2C_Mem_Write' makes pointer from integer without a cast [-Wint-conversion]
+          1,        // how many bytes to expect returned
+          ^
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/si5351.c:47:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:610:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int'
+ HAL_StatusTypeDef HAL_I2C_Mem_Write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+                   ^~~~~~~~~~~~~~~~~
+../Core/Src/si5351.c:571:14: error: too few arguments to function 'HAL_I2C_Mem_Write'
+     status = HAL_I2C_Mem_Write((uint8_t)(SI5351_ADDRESS<<1),  // i2c address, left aligned
+              ^~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/si5351.c:47:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:610:19: note: declared here
+ HAL_StatusTypeDef HAL_I2C_Mem_Write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+                   ^~~~~~~~~~~~~~~~~
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+22:01:00 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+22:15:37 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:813:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:835:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+22:16:00 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+22:16:37 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:98:3: warning: implicit declaration of function 'si5351_Init'; did you mean 'MX_I2C1_Init'? [-Wimplicit-function-declaration]
+   si5351_Init();
+   ^~~~~~~~~~~
+   MX_I2C1_Init
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:99:3: warning: implicit declaration of function 'si5351_setupPLLInt' [-Wimplicit-function-declaration]
+   si5351_setupPLLInt(SI5351_PLL_A, 32);
+   ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:99:22: error: 'SI5351_PLL_A' undeclared (first use in this function)
+   si5351_setupPLLInt(SI5351_PLL_A, 32);
+                      ^~~~~~~~~~~~
+../Core/Src/main.c:99:22: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:100:3: warning: implicit declaration of function 'si5351_setupMultisynthInt' [-Wimplicit-function-declaration]
+   si5351_setupMultisynthInt(0, SI5351_PLL_A, 50);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'si5351_setupRdiv' [-Wimplicit-function-declaration]
+   si5351_setupRdiv(0, SI5351_R_DIV_1);
+   ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:101:23: error: 'SI5351_R_DIV_1' undeclared (first use in this function); did you mean 'SI5351_PLL_A'?
+   si5351_setupRdiv(0, SI5351_R_DIV_1);
+                       ^~~~~~~~~~~~~~
+                       SI5351_PLL_A
+../Core/Src/main.c:102:3: warning: implicit declaration of function 'si5351_setupPLL' [-Wimplicit-function-declaration]
+   si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:102:19: error: 'SI5351_PLL_B' undeclared (first use in this function); did you mean 'SI5351_PLL_A'?
+   si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+                   ^~~~~~~~~~~~
+                   SI5351_PLL_A
+../Core/Src/main.c:103:3: warning: implicit declaration of function 'si5351_setupMultisynth' [-Wimplicit-function-declaration]
+   si5351_setupMultisynth(2, SI5351_PLL_B, 1336, 0, 1);
+   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:104:23: error: 'SI5351_R_DIV_16' undeclared (first use in this function); did you mean 'SI5351_R_DIV_1'?
+   si5351_setupRdiv(2, SI5351_R_DIV_16);
+                       ^~~~~~~~~~~~~~~
+                       SI5351_R_DIV_1
+../Core/Src/main.c:105:3: warning: implicit declaration of function 'si5351_enableOutputs' [-Wimplicit-function-declaration]
+   si5351_enableOutputs(0xFF);
+   ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:305:1: error: unknown type name 'err_t'
+ err_t si5351_Init(void)
+ ^~~~~
+../Core/Src/main.c: In function 'si5351_Init':
+../Core/Src/main.c:311:4: error: 'm_si5351Config' undeclared (first use in this function); did you mean 'si5351_Init'?
+    m_si5351Config.initialised     = 0;
+    ^~~~~~~~~~~~~~
+    si5351_Init
+../Core/Src/main.c:312:37: error: 'SI5351_CRYSTAL_FREQ_25MHZ' undeclared (first use in this function)
+    m_si5351Config.crystalFreq     = SI5351_CRYSTAL_FREQ_25MHZ;
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:313:37: error: 'SI5351_CRYSTAL_LOAD_10PF' undeclared (first use in this function); did you mean 'SI5351_CRYSTAL_FREQ_25MHZ'?
+    m_si5351Config.crystalLoad     = SI5351_CRYSTAL_LOAD_10PF;
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+                                     SI5351_CRYSTAL_FREQ_25MHZ
+../Core/Src/main.c:329:3: warning: implicit declaration of function 'ASSERT_STATUS'; did you mean 'IS_UART_STATE'? [-Wimplicit-function-declaration]
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+   ^~~~~~~~~~~~~
+   IS_UART_STATE
+../Core/Src/main.c:329:17: warning: implicit declaration of function 'si5351_write8'; did you mean 'si5351_Init'? [-Wimplicit-function-declaration]
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+                 ^~~~~~~~~~~~~
+                 si5351_Init
+../Core/Src/main.c:329:31: error: 'SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL' undeclared (first use in this function)
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:332:31: error: 'SI5351_REGISTER_16_CLK0_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_16_CLK0_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL
+../Core/Src/main.c:333:31: error: 'SI5351_REGISTER_17_CLK1_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_16_CLK0_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_17_CLK1_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_16_CLK0_CONTROL
+../Core/Src/main.c:334:31: error: 'SI5351_REGISTER_18_CLK2_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_17_CLK1_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_18_CLK2_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_17_CLK1_CONTROL
+../Core/Src/main.c:335:31: error: 'SI5351_REGISTER_19_CLK3_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_18_CLK2_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_19_CLK3_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_18_CLK2_CONTROL
+../Core/Src/main.c:336:31: error: 'SI5351_REGISTER_20_CLK4_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_19_CLK3_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_20_CLK4_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_19_CLK3_CONTROL
+../Core/Src/main.c:337:31: error: 'SI5351_REGISTER_21_CLK5_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_20_CLK4_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_21_CLK5_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_20_CLK4_CONTROL
+../Core/Src/main.c:338:31: error: 'SI5351_REGISTER_22_CLK6_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_21_CLK5_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_22_CLK6_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_21_CLK5_CONTROL
+../Core/Src/main.c:339:31: error: 'SI5351_REGISTER_23_CLK7_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_22_CLK6_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_23_CLK7_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_22_CLK6_CONTROL
+../Core/Src/main.c:342:31: error: 'SI5351_REGISTER_183_CRYSTAL_INTERNAL_LOAD_CAPACITANCE' undeclared (first use in this function)
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_183_CRYSTAL_INTERNAL_LOAD_CAPACITANCE,
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:359:10: error: 'ERROR_NONE' undeclared (first use in this function); did you mean 'ERROR'?
+   return ERROR_NONE;
+          ^~~~~~~~~~
+          ERROR
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:373:1: error: unknown type name 'err_t'
+ err_t si5351_setupPLLInt(si5351PLL_t pll, uint8_t mult)
+ ^~~~~
+../Core/Src/main.c:373:26: error: unknown type name 'si5351PLL_t'
+ err_t si5351_setupPLLInt(si5351PLL_t pll, uint8_t mult)
+                          ^~~~~~~~~~~
+../Core/Src/main.c:408:1: error: unknown type name 'err_t'
+ err_t si5351_setupPLL(si5351PLL_t pll,
+ ^~~~~
+../Core/Src/main.c:408:23: error: unknown type name 'si5351PLL_t'
+ err_t si5351_setupPLL(si5351PLL_t pll,
+                       ^~~~~~~~~~~
+../Core/Src/main.c:505:1: error: unknown type name 'err_t'
+ err_t si5351_setupMultisynthInt(uint8_t               output,
+ ^~~~~
+../Core/Src/main.c:506:43: error: unknown type name 'si5351PLL_t'
+                                           si5351PLL_t           pllSource,
+                                           ^~~~~~~~~~~
+../Core/Src/main.c:507:43: error: unknown type name 'si5351MultisynthDiv_t'
+                                           si5351MultisynthDiv_t div)
+                                           ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:513:1: error: unknown type name 'err_t'
+ err_t si5351_setupRdiv(uint8_t  output, si5351RDiv_t div) {
+ ^~~~~
+../Core/Src/main.c:513:41: error: unknown type name 'si5351RDiv_t'
+ err_t si5351_setupRdiv(uint8_t  output, si5351RDiv_t div) {
+                                         ^~~~~~~~~~~~
+../Core/Src/main.c:641:1: error: unknown type name 'err_t'
+ err_t si5351_setupMultisynth(uint8_t     output,
+ ^~~~~
+../Core/Src/main.c:642:40: error: unknown type name 'si5351PLL_t'
+                                        si5351PLL_t pllSource,
+                                        ^~~~~~~~~~~
+../Core/Src/main.c:790:1: error: unknown type name 'err_t'
+ err_t si5351_enableOutputs(uint8_t enabled)
+ ^~~~~
+../Core/Src/main.c:790:7: error: conflicting types for 'si5351_enableOutputs'
+ err_t si5351_enableOutputs(uint8_t enabled)
+       ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:791:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../Core/Src/main.c:105:3: note: previous implicit declaration of 'si5351_enableOutputs' was here
+   si5351_enableOutputs(0xFF);
+   ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'si5351_enableOutputs':
+../Core/Src/main.c:793:3: warning: implicit declaration of function 'ASSERT'; did you mean '__STRT'? [-Wimplicit-function-declaration]
+   ASSERT(m_si5351Config.initialised, ERROR_DEVICENOTINITIALISED);
+   ^~~~~~
+   __STRT
+../Core/Src/main.c:793:10: error: 'm_si5351Config' undeclared (first use in this function); did you mean 'si5351_Init'?
+   ASSERT(m_si5351Config.initialised, ERROR_DEVICENOTINITIALISED);
+          ^~~~~~~~~~~~~~
+          si5351_Init
+../Core/Src/main.c:793:38: error: 'ERROR_DEVICENOTINITIALISED' undeclared (first use in this function)
+   ASSERT(m_si5351Config.initialised, ERROR_DEVICENOTINITIALISED);
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:796:31: error: 'SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL' undeclared (first use in this function)
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, enabled ? 0x00: 0xFF));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:798:10: error: 'ERROR_NONE' undeclared (first use in this function); did you mean 'ERROR'?
+   return ERROR_NONE;
+          ^~~~~~~~~~
+          ERROR
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:810:1: error: unknown type name 'err_t'
+ err_t si5351_write8 (uint8_t reg, uint8_t value)
+ ^~~~~
+../Core/Src/main.c:810:7: error: conflicting types for 'si5351_write8'
+ err_t si5351_write8 (uint8_t reg, uint8_t value)
+       ^~~~~~~~~~~~~
+../Core/Src/main.c:811:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../Core/Src/main.c:329:17: note: previous implicit declaration of 'si5351_write8' was here
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+                 ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:814:50: error: 'SI5351_ADDRESS' undeclared (first use in this function); did you mean 'CIR_BYTE1_ADDRESS'?
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                                  ^~~~~~~~~~~~~~
+                                                  CIR_BYTE1_ADDRESS
+../Core/Src/main.c:824:10: error: 'ERROR_NONE' undeclared (first use in this function); did you mean 'ERROR'?
+   return ERROR_NONE;
+          ^~~~~~~~~~
+          ERROR
+../Core/Src/main.c:812:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:832:1: error: unknown type name 'err_t'
+ err_t si5351_read8(uint8_t reg, uint8_t *value)
+ ^~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:836:50: error: 'SI5351_ADDRESS' undeclared (first use in this function); did you mean 'CIR_BYTE1_ADDRESS'?
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                                  ^~~~~~~~~~~~~~
+                                                  CIR_BYTE1_ADDRESS
+../Core/Src/main.c:846:10: error: 'ERROR_NONE' undeclared (first use in this function); did you mean 'ERROR'?
+   return ERROR_NONE;
+          ^~~~~~~~~~
+          ERROR
+../Core/Src/main.c:834:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_Init':
+../Core/Src/main.c:360:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Core/Src/main.c: In function 'si5351_enableOutputs':
+../Core/Src/main.c:799:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:825:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:847:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+22:17:01 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:814:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:836:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:51:37 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:52:03 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:31: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                               ^~~~~
+../Core/Src/si5351.c:569:31: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:31: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                               ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:54:32 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:816:31: error: incompatible type for argument 1 of 'HAL_I2C_IsDeviceReady'
+  while (HAL_I2C_IsDeviceReady(hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                               ^~~~~
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:614:19: note: expected 'I2C_HandleTypeDef * {aka struct __I2C_HandleTypeDef *}' but argument is of type 'I2C_HandleTypeDef {aka struct __I2C_HandleTypeDef}'
+ HAL_StatusTypeDef HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint32_t Trials,
+                   ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:818:32: error: incompatible type for argument 1 of 'HAL_I2C_Mem_Write'
+     status = HAL_I2C_Mem_Write(hi2c1,       // i2c handle
+                                ^~~~~
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:610:19: note: expected 'I2C_HandleTypeDef * {aka struct __I2C_HandleTypeDef *}' but argument is of type 'I2C_HandleTypeDef {aka struct __I2C_HandleTypeDef}'
+ HAL_StatusTypeDef HAL_I2C_Mem_Write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+                   ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:814:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:838:31: error: incompatible type for argument 1 of 'HAL_I2C_IsDeviceReady'
+  while (HAL_I2C_IsDeviceReady(hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                               ^~~~~
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:614:19: note: expected 'I2C_HandleTypeDef * {aka struct __I2C_HandleTypeDef *}' but argument is of type 'I2C_HandleTypeDef {aka struct __I2C_HandleTypeDef}'
+ HAL_StatusTypeDef HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint32_t Trials,
+                   ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/main.c:840:31: error: incompatible type for argument 1 of 'HAL_I2C_Mem_Read'
+     status = HAL_I2C_Mem_Read(hi2c1,       // i2c handle
+                               ^~~~~
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:612:19: note: expected 'I2C_HandleTypeDef * {aka struct __I2C_HandleTypeDef *}' but argument is of type 'I2C_HandleTypeDef {aka struct __I2C_HandleTypeDef}'
+ HAL_StatusTypeDef HAL_I2C_Mem_Read(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+                   ^~~~~~~~~~~~~~~~
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:836:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:57:13 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c:814:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:836:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:57:55 **** Incremental Build of configuration Debug for project SI5351A test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:3: warning: implicit declaration of function 'si5351_Init'; did you mean 'MX_I2C1_Init'? [-Wimplicit-function-declaration]
+   si5351_Init();
+   ^~~~~~~~~~~
+   MX_I2C1_Init
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'si5351_setupPLLInt' [-Wimplicit-function-declaration]
+   si5351_setupPLLInt(SI5351_PLL_A, 32);
+   ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:101:22: error: 'SI5351_PLL_A' undeclared (first use in this function)
+   si5351_setupPLLInt(SI5351_PLL_A, 32);
+                      ^~~~~~~~~~~~
+../Core/Src/main.c:101:22: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:102:3: warning: implicit declaration of function 'si5351_setupMultisynthInt' [-Wimplicit-function-declaration]
+   si5351_setupMultisynthInt(0, SI5351_PLL_A, 50);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:103:3: warning: implicit declaration of function 'si5351_setupRdiv' [-Wimplicit-function-declaration]
+   si5351_setupRdiv(0, SI5351_R_DIV_1);
+   ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:103:23: error: 'SI5351_R_DIV_1' undeclared (first use in this function); did you mean 'SI5351_PLL_A'?
+   si5351_setupRdiv(0, SI5351_R_DIV_1);
+                       ^~~~~~~~~~~~~~
+                       SI5351_PLL_A
+../Core/Src/main.c:104:3: warning: implicit declaration of function 'si5351_setupPLL' [-Wimplicit-function-declaration]
+   si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:104:19: error: 'SI5351_PLL_B' undeclared (first use in this function); did you mean 'SI5351_PLL_A'?
+   si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+                   ^~~~~~~~~~~~
+                   SI5351_PLL_A
+../Core/Src/main.c:105:3: warning: implicit declaration of function 'si5351_setupMultisynth' [-Wimplicit-function-declaration]
+   si5351_setupMultisynth(2, SI5351_PLL_B, 1336, 0, 1);
+   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:106:23: error: 'SI5351_R_DIV_16' undeclared (first use in this function); did you mean 'SI5351_R_DIV_1'?
+   si5351_setupRdiv(2, SI5351_R_DIV_16);
+                       ^~~~~~~~~~~~~~~
+                       SI5351_R_DIV_1
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'si5351_enableOutputs' [-Wimplicit-function-declaration]
+   si5351_enableOutputs(0xFF);
+   ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:307:1: error: unknown type name 'err_t'
+ err_t si5351_Init(void)
+ ^~~~~
+../Core/Src/main.c: In function 'si5351_Init':
+../Core/Src/main.c:313:4: error: 'm_si5351Config' undeclared (first use in this function); did you mean 'si5351_Init'?
+    m_si5351Config.initialised     = 0;
+    ^~~~~~~~~~~~~~
+    si5351_Init
+../Core/Src/main.c:314:37: error: 'SI5351_CRYSTAL_FREQ_25MHZ' undeclared (first use in this function)
+    m_si5351Config.crystalFreq     = SI5351_CRYSTAL_FREQ_25MHZ;
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:315:37: error: 'SI5351_CRYSTAL_LOAD_10PF' undeclared (first use in this function); did you mean 'SI5351_CRYSTAL_FREQ_25MHZ'?
+    m_si5351Config.crystalLoad     = SI5351_CRYSTAL_LOAD_10PF;
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+                                     SI5351_CRYSTAL_FREQ_25MHZ
+../Core/Src/main.c:331:3: warning: implicit declaration of function 'ASSERT_STATUS'; did you mean 'IS_UART_STATE'? [-Wimplicit-function-declaration]
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+   ^~~~~~~~~~~~~
+   IS_UART_STATE
+../Core/Src/main.c:331:17: warning: implicit declaration of function 'si5351_write8'; did you mean 'si5351_Init'? [-Wimplicit-function-declaration]
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+                 ^~~~~~~~~~~~~
+                 si5351_Init
+../Core/Src/main.c:331:31: error: 'SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL' undeclared (first use in this function)
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:334:31: error: 'SI5351_REGISTER_16_CLK0_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_16_CLK0_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL
+../Core/Src/main.c:335:31: error: 'SI5351_REGISTER_17_CLK1_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_16_CLK0_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_17_CLK1_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_16_CLK0_CONTROL
+../Core/Src/main.c:336:31: error: 'SI5351_REGISTER_18_CLK2_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_17_CLK1_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_18_CLK2_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_17_CLK1_CONTROL
+../Core/Src/main.c:337:31: error: 'SI5351_REGISTER_19_CLK3_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_18_CLK2_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_19_CLK3_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_18_CLK2_CONTROL
+../Core/Src/main.c:338:31: error: 'SI5351_REGISTER_20_CLK4_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_19_CLK3_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_20_CLK4_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_19_CLK3_CONTROL
+../Core/Src/main.c:339:31: error: 'SI5351_REGISTER_21_CLK5_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_20_CLK4_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_21_CLK5_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_20_CLK4_CONTROL
+../Core/Src/main.c:340:31: error: 'SI5351_REGISTER_22_CLK6_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_21_CLK5_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_22_CLK6_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_21_CLK5_CONTROL
+../Core/Src/main.c:341:31: error: 'SI5351_REGISTER_23_CLK7_CONTROL' undeclared (first use in this function); did you mean 'SI5351_REGISTER_22_CLK6_CONTROL'?
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_23_CLK7_CONTROL, 0x80));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                               SI5351_REGISTER_22_CLK6_CONTROL
+../Core/Src/main.c:344:31: error: 'SI5351_REGISTER_183_CRYSTAL_INTERNAL_LOAD_CAPACITANCE' undeclared (first use in this function)
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_183_CRYSTAL_INTERNAL_LOAD_CAPACITANCE,
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:361:10: error: 'ERROR_NONE' undeclared (first use in this function); did you mean 'ERROR'?
+   return ERROR_NONE;
+          ^~~~~~~~~~
+          ERROR
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:375:1: error: unknown type name 'err_t'
+ err_t si5351_setupPLLInt(si5351PLL_t pll, uint8_t mult)
+ ^~~~~
+../Core/Src/main.c:375:26: error: unknown type name 'si5351PLL_t'
+ err_t si5351_setupPLLInt(si5351PLL_t pll, uint8_t mult)
+                          ^~~~~~~~~~~
+../Core/Src/main.c:410:1: error: unknown type name 'err_t'
+ err_t si5351_setupPLL(si5351PLL_t pll,
+ ^~~~~
+../Core/Src/main.c:410:23: error: unknown type name 'si5351PLL_t'
+ err_t si5351_setupPLL(si5351PLL_t pll,
+                       ^~~~~~~~~~~
+../Core/Src/main.c:507:1: error: unknown type name 'err_t'
+ err_t si5351_setupMultisynthInt(uint8_t               output,
+ ^~~~~
+../Core/Src/main.c:508:43: error: unknown type name 'si5351PLL_t'
+                                           si5351PLL_t           pllSource,
+                                           ^~~~~~~~~~~
+../Core/Src/main.c:509:43: error: unknown type name 'si5351MultisynthDiv_t'
+                                           si5351MultisynthDiv_t div)
+                                           ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:515:1: error: unknown type name 'err_t'
+ err_t si5351_setupRdiv(uint8_t  output, si5351RDiv_t div) {
+ ^~~~~
+../Core/Src/main.c:515:41: error: unknown type name 'si5351RDiv_t'
+ err_t si5351_setupRdiv(uint8_t  output, si5351RDiv_t div) {
+                                         ^~~~~~~~~~~~
+../Core/Src/main.c:643:1: error: unknown type name 'err_t'
+ err_t si5351_setupMultisynth(uint8_t     output,
+ ^~~~~
+../Core/Src/main.c:644:40: error: unknown type name 'si5351PLL_t'
+                                        si5351PLL_t pllSource,
+                                        ^~~~~~~~~~~
+../Core/Src/main.c:792:1: error: unknown type name 'err_t'
+ err_t si5351_enableOutputs(uint8_t enabled)
+ ^~~~~
+../Core/Src/main.c:792:7: error: conflicting types for 'si5351_enableOutputs'
+ err_t si5351_enableOutputs(uint8_t enabled)
+       ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:793:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'si5351_enableOutputs' was here
+   si5351_enableOutputs(0xFF);
+   ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'si5351_enableOutputs':
+../Core/Src/main.c:795:3: warning: implicit declaration of function 'ASSERT'; did you mean '__STRT'? [-Wimplicit-function-declaration]
+   ASSERT(m_si5351Config.initialised, ERROR_DEVICENOTINITIALISED);
+   ^~~~~~
+   __STRT
+../Core/Src/main.c:795:10: error: 'm_si5351Config' undeclared (first use in this function); did you mean 'si5351_Init'?
+   ASSERT(m_si5351Config.initialised, ERROR_DEVICENOTINITIALISED);
+          ^~~~~~~~~~~~~~
+          si5351_Init
+../Core/Src/main.c:795:38: error: 'ERROR_DEVICENOTINITIALISED' undeclared (first use in this function)
+   ASSERT(m_si5351Config.initialised, ERROR_DEVICENOTINITIALISED);
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:798:31: error: 'SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL' undeclared (first use in this function)
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, enabled ? 0x00: 0xFF));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:800:10: error: 'ERROR_NONE' undeclared (first use in this function); did you mean 'ERROR'?
+   return ERROR_NONE;
+          ^~~~~~~~~~
+          ERROR
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:812:1: error: unknown type name 'err_t'
+ err_t si5351_write8 (uint8_t reg, uint8_t value)
+ ^~~~~
+../Core/Src/main.c:812:7: error: conflicting types for 'si5351_write8'
+ err_t si5351_write8 (uint8_t reg, uint8_t value)
+       ^~~~~~~~~~~~~
+../Core/Src/main.c:813:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+../Core/Src/main.c:331:17: note: previous implicit declaration of 'si5351_write8' was here
+   ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+                 ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:816:50: error: 'SI5351_ADDRESS' undeclared (first use in this function); did you mean 'CIR_BYTE1_ADDRESS'?
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                                  ^~~~~~~~~~~~~~
+                                                  CIR_BYTE1_ADDRESS
+../Core/Src/main.c:826:10: error: 'ERROR_NONE' undeclared (first use in this function); did you mean 'ERROR'?
+   return ERROR_NONE;
+          ^~~~~~~~~~
+          ERROR
+../Core/Src/main.c:814:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:834:1: error: unknown type name 'err_t'
+ err_t si5351_read8(uint8_t reg, uint8_t *value)
+ ^~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:838:50: error: 'SI5351_ADDRESS' undeclared (first use in this function); did you mean 'CIR_BYTE1_ADDRESS'?
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                                  ^~~~~~~~~~~~~~
+                                                  CIR_BYTE1_ADDRESS
+../Core/Src/main.c:848:10: error: 'ERROR_NONE' undeclared (first use in this function); did you mean 'ERROR'?
+   return ERROR_NONE;
+          ^~~~~~~~~~
+          ERROR
+../Core/Src/main.c:836:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_Init':
+../Core/Src/main.c:362:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Core/Src/main.c: In function 'si5351_enableOutputs':
+../Core/Src/main.c:801:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:827:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:849:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:03:57 **** Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32g474retx.d" -MT"Core/Startup/startup_stm32g474retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32g474retx.o" "../Core/Startup/startup_stm32g474retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:96:3: warning: implicit declaration of function 'si5351_Init'; did you mean 'MX_I2C1_Init'? [-Wimplicit-function-declaration]
+   si5351_Init();
+   ^~~~~~~~~~~
+   MX_I2C1_Init
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:98:3: warning: implicit declaration of function 'si5351_setupPLLInt' [-Wimplicit-function-declaration]
+   si5351_setupPLLInt(SI5351_PLL_A, 32);
+   ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:98:22: error: 'SI5351_PLL_A' undeclared (first use in this function)
+   si5351_setupPLLInt(SI5351_PLL_A, 32);
+                      ^~~~~~~~~~~~
+../Core/Src/main.c:98:22: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:99:3: warning: implicit declaration of function 'si5351_setupMultisynthInt' [-Wimplicit-function-declaration]
+   si5351_setupMultisynthInt(0, SI5351_PLL_A, 50);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:100:3: warning: implicit declaration of function 'si5351_setupRdiv' [-Wimplicit-function-declaration]
+   si5351_setupRdiv(0, SI5351_R_DIV_1);
+   ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:100:23: error: 'SI5351_R_DIV_1' undeclared (first use in this function); did you mean 'SI5351_PLL_A'?
+   si5351_setupRdiv(0, SI5351_R_DIV_1);
+                       ^~~~~~~~~~~~~~
+                       SI5351_PLL_A
+../Core/Src/main.c:102:3: warning: implicit declaration of function 'si5351_setupPLL' [-Wimplicit-function-declaration]
+   si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:102:19: error: 'SI5351_PLL_B' undeclared (first use in this function); did you mean 'SI5351_PLL_A'?
+   si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+                   ^~~~~~~~~~~~
+                   SI5351_PLL_A
+../Core/Src/main.c:103:3: warning: implicit declaration of function 'si5351_setupMultisynth' [-Wimplicit-function-declaration]
+   si5351_setupMultisynth(2, SI5351_PLL_B, 1336, 0, 1);
+   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:104:23: error: 'SI5351_R_DIV_16' undeclared (first use in this function); did you mean 'SI5351_R_DIV_1'?
+   si5351_setupRdiv(2, SI5351_R_DIV_16);
+                       ^~~~~~~~~~~~~~~
+                       SI5351_R_DIV_1
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:04:51 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g4xx_hal_msp.d" -MT"Core/Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g4xx_it.d" -MT"Core/Src/stm32g4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_it.o"
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:08:18 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/I2C.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/I2C.d" -MT"Core/Src/I2C.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/I2C.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+../Core/Src/I2C.c:1:10: fatal error: stm32f10x_rcc.h: No such file or directory
+ #include "stm32f10x_rcc.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:39: Core/Src/I2C.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:41: Core/Src/main.o] Error 1
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:43: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:09:19 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g4xx_hal_msp.d" -MT"Core/Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_hal_msp.o"
+../Core/Src/main.c:64:392: warning: excess elements in array initializer
+   49,53,57,61,66,70,75,80,85,90,95,101,106,112,118,124,130,136,142,149,156,162,169,176,184,191,198,206,214,222,229,238,246,254,262,271,280,288,297,306,315,325,334,343,353,363,372,382,392,402,412,422,433,443,454,464,475,486,496,507,518,529,540,552,563,574,586,597,609,620,632,644,655,667,679,691,703,715,727,739,751,764,776,788,800,813,825,837,850,862,875,887,900,912,925,937,950,962,975,987,1000,};
+                                                                                                                                                                                                                                                                                                                                                                                                        ^~~~
+../Core/Src/main.c:64:392: note: (near initialization for 'sinewave')
+../Core/Src/main.c:68:193: warning: excess elements in array initializer
+   49,57,66,75,85,95,106,118,130,142,156,169,184,198,214,229,246,262,280,297,315,334,353,372,392,412,433,454,475,496,518,540,563,586,609,632,655,679,703,727,751,776,800,825,850,875,900,925,950,975,1000,};
+                                                                                                                                                                                                 ^~~
+../Core/Src/main.c:68:193: note: (near initialization for 'sinewave2')
+../Core/Src/main.c:68:197: warning: excess elements in array initializer
+   49,57,66,75,85,95,106,118,130,142,156,169,184,198,214,229,246,262,280,297,315,334,353,372,392,412,433,454,475,496,518,540,563,586,609,632,655,679,703,727,751,776,800,825,850,875,900,925,950,975,1000,};
+                                                                                                                                                                                                     ^~~~
+../Core/Src/main.c:68:197: note: (near initialization for 'sinewave2')
+../Core/Src/main.c:517:13: warning: 'DAC_ChangeWave' defined but not used [-Wunused-function]
+ static void DAC_ChangeWave()
+             ^~~~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g4xx_it.d" -MT"Core/Src/stm32g4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32g4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32g4xx.d" -MT"Core/Src/system_stm32g4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32g4xx.o"
+arm-none-eabi-gcc -o "pls-work.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/pls-work/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pls-work.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: pls-work.elf
+ 
+arm-none-eabi-objdump -h -S  pls-work.elf  > "pls-work.list"
+arm-none-eabi-objcopy  -O binary  pls-work.elf  "pls-work.bin"
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13700	     20	   1964	  15684	   3d44	pls-work.elf
+Finished building: default.size.stdout
+ 
+Finished building: pls-work.bin
+ 
+Finished building: pls-work.list
+ 
+11:11:09 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32g4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32g4xx.d" -MT"Core/Src/system_stm32g4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32g4xx.o"
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:12:04 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:12:20 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:12:52 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c: In function 'si5351_write8':
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:16:31 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+../Core/Src/si5351.c:50:10: fatal error: i2c.h: No such file or directory
+ #include "i2c.h"
+          ^~~~~~~
+compilation terminated.
+compilation terminated.
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:18:57 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:20:01 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/i2c.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/i2c.c:1:10: fatal error: stm32f10x_rcc.h: No such file or directory
+ #include "stm32f10x_rcc.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:39: Core/Src/i2c.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/si5351.c: In function 'si5351_write8':
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/si5351.o] Error 1
+make: *** [Core/Src/subdir.mk:41: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:24:08 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:570:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:592:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:570:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:592:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+arm-none-eabi-gcc -o "SI5351a test 2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SI5351a test 2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Core/Src/si5351.o: In function `si5351_Init':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:64: multiple definition of `si5351_Init'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:64: first defined here
+Core/Src/si5351.o: In function `si5351_write8':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:569: multiple definition of `si5351_write8'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:569: first defined here
+Core/Src/si5351.o: In function `si5351_setupPLLInt':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:132: multiple definition of `si5351_setupPLLInt'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:132: first defined here
+Core/Src/si5351.o: In function `si5351_setupPLL':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:170: multiple definition of `si5351_setupPLL'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:170: first defined here
+Core/Src/si5351.o: In function `si5351_setupMultisynthInt':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:266: multiple definition of `si5351_setupMultisynthInt'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:266: first defined here
+Core/Src/si5351.o: In function `si5351_setupMultisynth':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:404: multiple definition of `si5351_setupMultisynth'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:404: first defined here
+Core/Src/si5351.o: In function `si5351_setupRdiv':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:271: multiple definition of `si5351_setupRdiv'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:271: first defined here
+Core/Src/si5351.o: In function `si5351_read8':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:591: multiple definition of `si5351_read8'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:591: first defined here
+Core/Src/si5351.o: In function `si5351_enableOutputs':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:549: multiple definition of `si5351_enableOutputs'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:549: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [makefile:58: SI5351a test 2.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:24:26 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:26:02 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+arm-none-eabi-gcc -o "SI5351a test 2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SI5351a test 2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Core/Src/si5351.o: In function `si5351_Init':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:61: multiple definition of `si5351_Init'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:61: first defined here
+Core/Src/si5351.o: In function `si5351_write8':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:566: multiple definition of `si5351_write8'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:566: first defined here
+Core/Src/si5351.o: In function `si5351_setupPLLInt':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:129: multiple definition of `si5351_setupPLLInt'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:129: first defined here
+Core/Src/si5351.o: In function `si5351_setupPLL':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:167: multiple definition of `si5351_setupPLL'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:167: first defined here
+Core/Src/si5351.o: In function `si5351_setupMultisynthInt':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:263: multiple definition of `si5351_setupMultisynthInt'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:263: first defined here
+Core/Src/si5351.o: In function `si5351_setupMultisynth':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:401: multiple definition of `si5351_setupMultisynth'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:401: first defined here
+Core/Src/si5351.o: In function `si5351_setupRdiv':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:268: multiple definition of `si5351_setupRdiv'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:268: first defined here
+Core/Src/si5351.o: In function `si5351_read8':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:588: multiple definition of `si5351_read8'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:588: first defined here
+Core/Src/si5351.o: In function `si5351_enableOutputs':
+/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:546: multiple definition of `si5351_enableOutputs'
+Core/Src/main.o:/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/Debug/../Core/Src/si5351.c:546: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [makefile:58: SI5351a test 2.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:27:07 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:29:51 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:31: error: expected expression before 'I2C_HandleTypeDef'
+  while (HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                               ^~~~~~~~~~~~~~~~~
+../Core/Src/si5351.c:569:9: error: too few arguments to function 'HAL_I2C_IsDeviceReady'
+  while (HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:614:19: note: declared here
+ HAL_StatusTypeDef HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint32_t Trials,
+                   ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c:571:33: error: 'hi2c1' undeclared (first use in this function)
+     status = HAL_I2C_Mem_Write(&hi2c1,       // i2c handle
+                                 ^~~~~
+../Core/Src/si5351.c:571:33: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:31: error: expected expression before 'I2C_HandleTypeDef'
+  while (HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                               ^~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/si5351.c:569:9: error: too few arguments to function 'HAL_I2C_IsDeviceReady'
+  while (HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/si5351.c:47:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:614:19: note: declared here
+ HAL_StatusTypeDef HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint32_t Trials,
+                   ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/si5351.c:571:33: error: 'hi2c1' undeclared (first use in this function)
+     status = HAL_I2C_Mem_Write(&hi2c1,       // i2c handle
+                                 ^~~~~
+../Core/Src/si5351.c:571:33: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:30:15 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/si5351.c: In function 'si5351_write8':
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:31: error: expected expression before 'I2C_HandleTypeDef'
+  while (HAL_I2C_IsDeviceReady(I2C_HandleTypeDef hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                               ^~~~~~~~~~~~~~~~~
+../Core/Src/si5351.c:569:9: error: too few arguments to function 'HAL_I2C_IsDeviceReady'
+  while (HAL_I2C_IsDeviceReady(I2C_HandleTypeDef hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:614:19: note: declared here
+ HAL_StatusTypeDef HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint32_t Trials,
+                   ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/si5351.c:569:31: error: expected expression before 'I2C_HandleTypeDef'
+  while (HAL_I2C_IsDeviceReady(I2C_HandleTypeDef hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                               ^~~~~~~~~~~~~~~~~
+../Core/Src/si5351.c:569:9: error: too few arguments to function 'HAL_I2C_IsDeviceReady'
+  while (HAL_I2C_IsDeviceReady(I2C_HandleTypeDef hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:279:0,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/si5351.c:47:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_i2c.h:614:19: note: declared here
+ HAL_StatusTypeDef HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint32_t Trials,
+                   ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:22:0:
+../Core/Src/si5351.c:571:33: error: 'hi2c1' undeclared (first use in this function)
+     status = HAL_I2C_Mem_Write(&hi2c1,       // i2c handle
+                                 ^~~~~
+../Core/Src/si5351.c:571:33: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c:571:33: error: 'hi2c1' undeclared (first use in this function)
+     status = HAL_I2C_Mem_Write(&hi2c1,       // i2c handle
+                                 ^~~~~
+../Core/Src/si5351.c:571:33: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:36: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:31:58 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/si5351.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351.d" -MT"Core/Src/si5351.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351.o"
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:848:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:870:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_write8':
+../Core/Src/si5351.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351.c: In function 'si5351_read8':
+../Core/Src/si5351.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:33:35 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/si5351-old.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/si5351-old.d" -MT"Core/Src/si5351-old.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/si5351-old.o"
+../Core/Src/si5351-old.c: In function 'si5351_write8':
+../Core/Src/si5351-old.c:569:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351-old.c:569:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/si5351-old.c:567:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/si5351-old.c: In function 'si5351_read8':
+../Core/Src/si5351-old.c:591:32: error: 'hi2c1' undeclared (first use in this function)
+  while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+                                ^~~~~
+../Core/Src/si5351-old.c:589:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+make: *** [Core/Src/subdir.mk:38: Core/Src/si5351-old.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:33:53 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13700	     20	   1964	  15684	   3d44	pls-work.elf
+Finished building: default.size.stdout
+ 
+11:34:02 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13700	     20	   1964	  15684	   3d44	pls-work.elf
+Finished building: default.size.stdout
+ 
+11:38:18 **** Incremental Build of configuration Debug for project pls-work ****
+make -j4 all 
+arm-none-eabi-size   pls-work.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13700	     20	   1964	  15684	   3d44	pls-work.elf
+Finished building: default.size.stdout
+ 
+11:39:56 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:848:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:870:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+arm-none-eabi-gcc -o "SI5351a test 2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SI5351a test 2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SI5351a test 2.elf
+ 
+arm-none-eabi-size   SI5351a\ test\ 2.elf 
+arm-none-eabi-objdump -h -S  SI5351a\ test\ 2.elf  > "SI5351a test 2.list"
+arm-none-eabi-objcopy  -O binary  SI5351a\ test\ 2.elf  "SI5351a test 2.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20464	     20	   1844	  22328	   5738	SI5351a test 2.elf
+Finished building: default.size.stdout
+ 
+Finished building: SI5351a test 2.bin
+ 
+Finished building: SI5351a test 2.list
+ 
+11:40:21 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-size   SI5351a\ test\ 2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20464	     20	   1844	  22328	   5738	SI5351a test 2.elf
+Finished building: default.size.stdout
+ 
+11:41:39 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:850:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:872:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+arm-none-eabi-gcc -o "SI5351a test 2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SI5351a test 2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SI5351a test 2.elf
+ 
+arm-none-eabi-objdump -h -S  SI5351a\ test\ 2.elf  > "SI5351a test 2.list"
+arm-none-eabi-objcopy  -O binary  SI5351a\ test\ 2.elf  "SI5351a test 2.bin"
+arm-none-eabi-size   SI5351a\ test\ 2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14652	     20	   1844	  16516	   4084	SI5351a test 2.elf
+Finished building: default.size.stdout
+ 
+Finished building: SI5351a test 2.bin
+ 
+Finished building: SI5351a test 2.list
+ 
+11:42:41 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-size   SI5351a\ test\ 2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14652	     20	   1844	  16516	   4084	SI5351a test 2.elf
+Finished building: default.size.stdout
+ 
+12:03:42 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:850:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:872:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+arm-none-eabi-gcc -o "SI5351a test 2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SI5351a test 2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SI5351a test 2.elf
+ 
+arm-none-eabi-objdump -h -S  SI5351a\ test\ 2.elf  > "SI5351a test 2.list"
+arm-none-eabi-objcopy  -O binary  SI5351a\ test\ 2.elf  "SI5351a test 2.bin"
+arm-none-eabi-size   SI5351a\ test\ 2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20464	     20	   1844	  22328	   5738	SI5351a test 2.elf
+Finished building: default.size.stdout
+ 
+Finished building: SI5351a test 2.bin
+ 
+Finished building: SI5351a test 2.list
+ 
+12:05:48 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-size   SI5351a\ test\ 2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20464	     20	   1844	  22328	   5738	SI5351a test 2.elf
+Finished building: default.size.stdout
+ 
+12:07:46 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:850:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:872:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+arm-none-eabi-gcc -o "SI5351a test 2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SI5351a test 2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SI5351a test 2.elf
+ 
+arm-none-eabi-objdump -h -S  SI5351a\ test\ 2.elf  > "SI5351a test 2.list"
+arm-none-eabi-objcopy  -O binary  SI5351a\ test\ 2.elf  "SI5351a test 2.bin"
+arm-none-eabi-size   SI5351a\ test\ 2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20464	     20	   1844	  22328	   5738	SI5351a test 2.elf
+Finished building: default.size.stdout
+ 
+Finished building: SI5351a test 2.bin
+ 
+Finished building: SI5351a test 2.list
+ 
+12:32:46 **** Incremental Build of configuration Debug for project SI5351a test 2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'si5351_write8':
+../Core/Src/main.c:850:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+../Core/Src/main.c: In function 'si5351_read8':
+../Core/Src/main.c:872:20: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  HAL_StatusTypeDef status = HAL_OK;
+                    ^~~~~~
+arm-none-eabi-gcc -o "SI5351a test 2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucag/Documents/GitHub/altsdr/uC software/workspace_1.5.0/SI5351a test 2/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SI5351a test 2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SI5351a test 2.elf
+ 
+arm-none-eabi-objdump -h -S  SI5351a\ test\ 2.elf  > "SI5351a test 2.list"
+arm-none-eabi-objcopy  -O binary  SI5351a\ test\ 2.elf  "SI5351a test 2.bin"
+arm-none-eabi-size   SI5351a\ test\ 2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14652	     20	   1844	  16516	   4084	SI5351a test 2.elf
+Finished building: default.size.stdout
+ 
+Finished building: SI5351a test 2.bin
+ 
+Finished building: SI5351a test 2.list
+ 

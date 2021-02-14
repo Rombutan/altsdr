@@ -1,0 +1,888 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
+  * All rights reserved.</center></h2>
+  *
+  * This software component is licensed by ST under BSD 3-Clause license,
+  * the "License"; You may not use this file except in compliance with the
+  * License. You may obtain a copy of the License at:
+  *                        opensource.org/licenses/BSD-3-Clause
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "stm32g4xx_hal.h"
+#include "i2c.h"
+#include <math.h>
+#include <si5351.h>
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+
+/* USER CODE END Includes */
+
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN PTD */
+
+/* USER CODE END PTD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c1;
+
+UART_HandleTypeDef hlpuart1;
+
+/* USER CODE BEGIN PV */
+
+/* USER CODE END PV */
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_LPUART1_UART_Init(void);
+static void MX_I2C1_Init(void);
+/* USER CODE BEGIN PFP */
+
+/* USER CODE END PFP */
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
+
+/* USER CODE END 0 */
+
+/**
+  * @brief  The application entry point.
+  * @retval int
+  */
+int main(void)
+{
+  /* USER CODE BEGIN 1 */
+
+  /* USER CODE END 1 */
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
+
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_LPUART1_UART_Init();
+  MX_I2C1_Init();
+  /* USER CODE BEGIN 2 */
+  si5351_Init();
+
+  si5351_setupPLLInt(SI5351_PLL_A, 32);
+  si5351_setupMultisynthInt(0, SI5351_PLL_A, 50);
+  si5351_setupRdiv(0, SI5351_R_DIV_1);
+
+  si5351_setupPLL(SI5351_PLL_B, 28, 7012, 390625);
+  si5351_setupMultisynth(2, SI5351_PLL_B, 1336, 0, 1);
+  si5351_setupRdiv(2, SI5351_R_DIV_16);
+
+
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+  }
+  /* USER CODE END 3 */
+}
+
+/**
+  * @brief System Clock Configuration
+  * @retval None
+  */
+void SystemClock_Config(void)
+{
+  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
+
+  /** Configure the main internal regulator output voltage
+  */
+  HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1_BOOST);
+  /** Initializes the RCC Oscillators according to the specified parameters
+  * in the RCC_OscInitTypeDef structure.
+  */
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+  RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV4;
+  RCC_OscInitStruct.PLL.PLLN = 85;
+  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+  RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
+  RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
+  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Initializes the CPU, AHB and APB buses clocks
+  */
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Initializes the peripherals clocks
+  */
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_LPUART1|RCC_PERIPHCLK_I2C1;
+  PeriphClkInit.Lpuart1ClockSelection = RCC_LPUART1CLKSOURCE_PCLK1;
+  PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_PCLK1;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C1_Init(void)
+{
+
+  /* USER CODE BEGIN I2C1_Init 0 */
+
+  /* USER CODE END I2C1_Init 0 */
+
+  /* USER CODE BEGIN I2C1_Init 1 */
+
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.Timing = 0x30A0A7FB;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c1, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c1, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
+
+}
+
+/**
+  * @brief LPUART1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_LPUART1_UART_Init(void)
+{
+
+  /* USER CODE BEGIN LPUART1_Init 0 */
+
+  /* USER CODE END LPUART1_Init 0 */
+
+  /* USER CODE BEGIN LPUART1_Init 1 */
+
+  /* USER CODE END LPUART1_Init 1 */
+  hlpuart1.Instance = LPUART1;
+  hlpuart1.Init.BaudRate = 115200;
+  hlpuart1.Init.WordLength = UART_WORDLENGTH_8B;
+  hlpuart1.Init.StopBits = UART_STOPBITS_1;
+  hlpuart1.Init.Parity = UART_PARITY_NONE;
+  hlpuart1.Init.Mode = UART_MODE_TX_RX;
+  hlpuart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  hlpuart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  hlpuart1.Init.ClockPrescaler = UART_PRESCALER_DIV1;
+  hlpuart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  if (HAL_UART_Init(&hlpuart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_UARTEx_SetTxFifoThreshold(&hlpuart1, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_UARTEx_SetRxFifoThreshold(&hlpuart1, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_UARTEx_DisableFifoMode(&hlpuart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN LPUART1_Init 2 */
+
+  /* USER CODE END LPUART1_Init 2 */
+
+}
+
+/**
+  * @brief GPIO Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_GPIO_Init(void)
+{
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+  /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
+  __HAL_RCC_GPIOF_CLK_ENABLE();
+  __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : B1_Pin */
+  GPIO_InitStruct.Pin = B1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : LD2_Pin */
+  GPIO_InitStruct.Pin = LD2_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+
+}
+
+/* USER CODE BEGIN 4 */
+
+/* USER CODE END 4 */
+
+/**
+  * @brief  This function is executed in case of error occurrence.
+  * @retval None
+  */
+void Error_Handler(void)
+{
+  /* USER CODE BEGIN Error_Handler_Debug */
+  /* User can add his own implementation to report the HAL error return state */
+  __disable_irq();
+  while (1)
+  {
+  }
+  /* USER CODE END Error_Handler_Debug */
+}
+
+#ifdef  USE_FULL_ASSERT
+/**
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
+void assert_failed(uint8_t *file, uint32_t line)
+{
+  /* USER CODE BEGIN 6 */
+  /* User can add his own implementation to report the file name and line number,
+     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+  /* USER CODE END 6 */
+}
+#endif /* USE_FULL_ASSERT */
+
+err_t si5351_Init(void)
+{
+
+	/*!
+	    Constructor
+	*/
+	  m_si5351Config.initialised     = 0;
+	  m_si5351Config.crystalFreq     = SI5351_CRYSTAL_FREQ_25MHZ;
+	  m_si5351Config.crystalLoad     = SI5351_CRYSTAL_LOAD_10PF;
+	  m_si5351Config.crystalPPM      = 30;
+	  m_si5351Config.plla_configured = 0;
+	  m_si5351Config.plla_freq       = 0;
+	  m_si5351Config.pllb_configured = 0;
+	  m_si5351Config.pllb_freq       = 0;
+	  m_si5351Config.ms0_freq		 = 0;
+	  m_si5351Config.ms1_freq		 = 0;
+	  m_si5351Config.ms2_freq		 = 0;
+	  m_si5351Config.ms0_r_div		 = 0;
+	  m_si5351Config.ms1_r_div		 = 0;
+	  m_si5351Config.ms2_r_div		 = 0;
+
+
+
+  /* Disable all outputs setting CLKx_DIS high */
+  ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, 0xFF));
+
+  /* Power down all output drivers */
+  ASSERT_STATUS(si5351_write8(SI5351_REGISTER_16_CLK0_CONTROL, 0x80));
+  ASSERT_STATUS(si5351_write8(SI5351_REGISTER_17_CLK1_CONTROL, 0x80));
+  ASSERT_STATUS(si5351_write8(SI5351_REGISTER_18_CLK2_CONTROL, 0x80));
+  ASSERT_STATUS(si5351_write8(SI5351_REGISTER_19_CLK3_CONTROL, 0x80));
+  ASSERT_STATUS(si5351_write8(SI5351_REGISTER_20_CLK4_CONTROL, 0x80));
+  ASSERT_STATUS(si5351_write8(SI5351_REGISTER_21_CLK5_CONTROL, 0x80));
+  ASSERT_STATUS(si5351_write8(SI5351_REGISTER_22_CLK6_CONTROL, 0x80));
+  ASSERT_STATUS(si5351_write8(SI5351_REGISTER_23_CLK7_CONTROL, 0x80));
+
+  /* Set the load capacitance for the XTAL */
+  ASSERT_STATUS(si5351_write8(SI5351_REGISTER_183_CRYSTAL_INTERNAL_LOAD_CAPACITANCE,
+                       m_si5351Config.crystalLoad));
+
+  /* Set interrupt masks as required (see Register 2 description in AN619).
+     By default, ClockBuilder Desktop sets this register to 0x18.
+     Note that the least significant nibble must remain 0x8, but the most
+     significant nibble may be modified to suit your needs. */
+
+  /* Reset the PLL config fields just in case we call init again */
+  m_si5351Config.plla_configured = 0;
+  m_si5351Config.plla_freq = 0;
+  m_si5351Config.pllb_configured = 0;
+  m_si5351Config.pllb_freq = 0;
+
+  /* All done! */
+  m_si5351Config.initialised = 1;
+
+  return ERROR_NONE;
+}
+
+
+/**************************************************************************/
+/*!
+  @brief  Sets the multiplier for the specified PLL using integer values
+
+  @param  pll   The PLL to configure, which must be one of the following:
+                - SI5351_PLL_A
+                - SI5351_PLL_B
+  @param  mult  The PLL integer multiplier (must be between 15 and 90)
+*/
+/**************************************************************************/
+err_t si5351_setupPLLInt(si5351PLL_t pll, uint8_t mult)
+{
+  return si5351_setupPLL(pll, mult, 0, 1);
+}
+
+/**************************************************************************/
+/*!
+    @brief  Sets the multiplier for the specified PLL
+
+    @param  pll   The PLL to configure, which must be one of the following:
+                  - SI5351_PLL_A
+                  - SI5351_PLL_B
+    @param  mult  The PLL integer multiplier (must be between 15 and 90)
+    @param  num   The 20-bit numerator for fractional output (0..1,048,575).
+                  Set this to '0' for integer output.
+    @param  denom The 20-bit denominator for fractional output (1..1,048,575).
+                  Set this to '1' or higher to avoid divider by zero errors.
+
+    @section PLL Configuration
+
+    fVCO is the PLL output, and must be between 600..900MHz, where:
+
+        fVCO = fXTAL * (a+(b/c))
+
+    fXTAL = the crystal input frequency
+    a     = an integer between 15 and 90
+    b     = the fractional numerator (0..1,048,575)
+    c     = the fractional denominator (1..1,048,575)
+
+    NOTE: Try to use integers whenever possible to avoid clock jitter
+    (only use the a part, setting b to '0' and c to '1').
+
+    See: http://www.silabs.com/Support%20Documents/TechnicalDocs/AN619.pdf
+*/
+/**************************************************************************/
+err_t si5351_setupPLL(si5351PLL_t pll,
+                                uint8_t     mult,
+                                uint32_t    num,
+                                uint32_t    denom)
+{
+  uint32_t P1;       /* PLL config register P1 */
+  uint32_t P2;	     /* PLL config register P2 */
+  uint32_t P3;	     /* PLL config register P3 */
+
+  /* Basic validation */
+  ASSERT( m_si5351Config.initialised, ERROR_DEVICENOTINITIALISED );
+  ASSERT( (mult > 14) && (mult < 91), ERROR_INVALIDPARAMETER ); /* mult = 15..90 */
+  ASSERT( denom > 0,                  ERROR_INVALIDPARAMETER ); /* Avoid divide by zero */
+  ASSERT( num <= 0xFFFFF,             ERROR_INVALIDPARAMETER ); /* 20-bit limit */
+  ASSERT( denom <= 0xFFFFF,           ERROR_INVALIDPARAMETER ); /* 20-bit limit */
+
+  /* Feedback Multisynth Divider Equation
+   *
+   * where: a = mult, b = num and c = denom
+   *
+   * P1 register is an 18-bit value using following formula:
+   *
+   * 	P1[17:0] = 128 * mult + floor(128*(num/denom)) - 512
+   *
+   * P2 register is a 20-bit value using the following formula:
+   *
+   * 	P2[19:0] = 128 * num - denom * floor(128*(num/denom))
+   *
+   * P3 register is a 20-bit value using the following formula:
+   *
+   * 	P3[19:0] = denom
+   */
+
+  /* Set the main PLL config registers */
+  if (num == 0)
+  {
+    /* Integer mode */
+    P1 = 128 * mult - 512;
+    P2 = num;
+    P3 = denom;
+  }
+  else
+  {
+    /* Fractional mode */
+    P1 = (uint32_t)(128 * mult + floor(128 * ((float)num/(float)denom)) - 512);
+    P2 = (uint32_t)(128 * num - denom * floor(128 * ((float)num/(float)denom)));
+    P3 = denom;
+  }
+
+  /* Get the appropriate starting point for the PLL registers */
+  uint8_t baseaddr = (pll == SI5351_PLL_A ? 26 : 34);
+
+  /* The datasheet is a nightmare of typos and inconsistencies here! */
+  ASSERT_STATUS( si5351_write8( baseaddr,   (P3 & 0x0000FF00) >> 8));
+  ASSERT_STATUS( si5351_write8( baseaddr+1, (P3 & 0x000000FF)));
+  ASSERT_STATUS( si5351_write8( baseaddr+2, (P1 & 0x00030000) >> 16));
+  ASSERT_STATUS( si5351_write8( baseaddr+3, (P1 & 0x0000FF00) >> 8));
+  ASSERT_STATUS( si5351_write8( baseaddr+4, (P1 & 0x000000FF)));
+  ASSERT_STATUS( si5351_write8( baseaddr+5, ((P3 & 0x000F0000) >> 12) | ((P2 & 0x000F0000) >> 16) ));
+  ASSERT_STATUS( si5351_write8( baseaddr+6, (P2 & 0x0000FF00) >> 8));
+  ASSERT_STATUS( si5351_write8( baseaddr+7, (P2 & 0x000000FF)));
+
+  /* Reset both PLLs */
+  ASSERT_STATUS( si5351_write8(SI5351_REGISTER_177_PLL_RESET, (1<<7) | (1<<5) ));
+
+  /* Store the frequency settings for use with the Multisynth helper */
+  if (pll == SI5351_PLL_A)
+  {
+    float fvco = m_si5351Config.crystalFreq * (mult + ( (float)num / (float)denom ));
+    m_si5351Config.plla_configured = 1; //true
+    m_si5351Config.plla_freq = (uint32_t)floor(fvco);
+  }
+  else
+  {
+    float fvco = m_si5351Config.crystalFreq * (mult + ( (float)num / (float)denom ));
+    m_si5351Config.pllb_configured = 1; //true
+    m_si5351Config.pllb_freq = (uint32_t)floor(fvco);
+  }
+
+  return ERROR_NONE;
+}
+
+/**************************************************************************/
+/*!
+    @brief  Configures the Multisynth divider using integer output.
+
+    @param  output    The output channel to use (0..2)
+    @param  pllSource	The PLL input source to use, which must be one of:
+                      - SI5351_PLL_A
+                      - SI5351_PLL_B
+    @param  div       The integer divider for the Multisynth output,
+                      which must be one of the following values:
+                      - SI5351_MULTISYNTH_DIV_4
+                      - SI5351_MULTISYNTH_DIV_6
+                      - SI5351_MULTISYNTH_DIV_8
+*/
+/**************************************************************************/
+err_t si5351_setupMultisynthInt(uint8_t               output,
+                                          si5351PLL_t           pllSource,
+                                          si5351MultisynthDiv_t div)
+{
+  return si5351_setupMultisynth(output, pllSource, div, 0, 1);
+}
+
+
+err_t si5351_setupRdiv(uint8_t  output, si5351RDiv_t div) {
+  ASSERT( output < 3,                 ERROR_INVALIDPARAMETER);  /* Channel range */
+
+  uint8_t Rreg, regval, rDiv;
+
+  if (output == 0) Rreg = SI5351_REGISTER_44_MULTISYNTH0_PARAMETERS_3;
+  if (output == 1) Rreg = SI5351_REGISTER_52_MULTISYNTH1_PARAMETERS_3;
+  if (output == 2) Rreg = SI5351_REGISTER_60_MULTISYNTH2_PARAMETERS_3;
+
+  si5351_read8(Rreg, &regval);
+
+  regval &= 0x0F;
+  uint8_t divider = div;
+  divider &= 0x07;
+  divider <<= 4;
+  regval |= divider;
+  si5351_write8(Rreg, regval);
+
+  switch(div)
+  {
+  case 0:
+  rDiv = 1;
+  break;
+
+  case 1:
+  rDiv = 2;
+  break;
+
+  case 2:
+  rDiv = 4;
+  break;
+
+  case 3:
+  rDiv = 8;
+  break;
+
+  case 4:
+  rDiv = 16;
+  break;
+
+  case 5:
+  rDiv = 32;
+  break;
+
+  case 6:
+  rDiv = 64;
+  break;
+
+  case 7:
+  rDiv = 128;
+  break;
+  }
+
+  switch(output)
+  {
+  case 0:
+  m_si5351Config.ms0_r_div = rDiv;
+  break;
+
+  case 1:
+  m_si5351Config.ms1_r_div = rDiv;
+  break;
+
+  case 2:
+  m_si5351Config.ms2_r_div = rDiv;
+  break;
+  }
+
+  return ERROR_NONE;
+}
+
+/**************************************************************************/
+/*!
+    @brief  Configures the Multisynth divider, which determines the
+            output clock frequency based on the specified PLL input.
+
+    @param  output    The output channel to use (0..2)
+    @param  pllSource	The PLL input source to use, which must be one of:
+                      - SI5351_PLL_A
+                      - SI5351_PLL_B
+    @param  div       The integer divider for the Multisynth output.
+                      If pure integer values are used, this value must
+                      be one of:
+                      - SI5351_MULTISYNTH_DIV_4
+                      - SI5351_MULTISYNTH_DIV_6
+                      - SI5351_MULTISYNTH_DIV_8
+                      If fractional output is used, this value must be
+                      between 8 and 900.
+    @param  num       The 20-bit numerator for fractional output
+                      (0..1,048,575). Set this to '0' for integer output.
+    @param  denom     The 20-bit denominator for fractional output
+                      (1..1,048,575). Set this to '1' or higher to
+                      avoid divide by zero errors.
+
+    @section Output Clock Configuration
+
+    The multisynth dividers are applied to the specified PLL output,
+    and are used to reduce the PLL output to a valid range (500kHz
+    to 160MHz). The relationship can be seen in this formula, where
+    fVCO is the PLL output frequency and MSx is the multisynth
+    divider:
+
+        fOUT = fVCO / MSx
+
+    Valid multisynth dividers are 4, 6, or 8 when using integers,
+    or any fractional values between 8 + 1/1,048,575 and 900 + 0/1
+
+    The following formula is used for the fractional mode divider:
+
+        a + b / c
+
+    a = The integer value, which must be 4, 6 or 8 in integer mode (MSx_INT=1)
+        or 8..900 in fractional mode (MSx_INT=0).
+    b = The fractional numerator (0..1,048,575)
+    c = The fractional denominator (1..1,048,575)
+
+    @note   Try to use integers whenever possible to avoid clock jitter
+
+    @note   For output frequencies > 150MHz, you must set the divider
+            to 4 and adjust to PLL to generate the frequency (for example
+            a PLL of 640 to generate a 160MHz output clock). This is not
+            yet supported in the driver, which limits frequencies to
+            500kHz .. 150MHz.
+
+    @note   For frequencies below 500kHz (down to 8kHz) Rx_DIV must be
+            used, but this isn't currently implemented in the driver.
+*/
+/**************************************************************************/
+err_t si5351_setupMultisynth(uint8_t     output,
+                                       si5351PLL_t pllSource,
+                                       uint32_t    div,
+                                       uint32_t    num,
+                                       uint32_t    denom)
+{
+  uint32_t P1;       /* Multisynth config register P1 */
+  uint32_t P2;	     /* Multisynth config register P2 */
+  uint32_t P3;	     /* Multisynth config register P3 */
+
+  /* Basic validation */
+  ASSERT( m_si5351Config.initialised, ERROR_DEVICENOTINITIALISED);
+  ASSERT( output < 3,                 ERROR_INVALIDPARAMETER);  /* Channel range */
+  //ASSERT( div > 3,                    ERROR_INVALIDPARAMETER);  /* Divider integer value */
+  //ASSERT( div < 901,                  ERROR_INVALIDPARAMETER);  /* Divider integer value */
+  //ASSERT( denom > 0,                  ERROR_INVALIDPARAMETER ); /* Avoid divide by zero */
+  //ASSERT( num <= 0xFFFFF,             ERROR_INVALIDPARAMETER ); /* 20-bit limit */
+  //ASSERT( denom <= 0xFFFFF,           ERROR_INVALIDPARAMETER ); /* 20-bit limit */
+
+
+  /* Make sure the requested PLL has been initialised */
+  if (pllSource == SI5351_PLL_A)
+  {
+    ASSERT(m_si5351Config.plla_configured = 1, ERROR_INVALIDPARAMETER);
+  }
+  else
+  {
+    ASSERT(m_si5351Config.pllb_configured = 1, ERROR_INVALIDPARAMETER);
+  }
+
+  /* Output Multisynth Divider Equations
+   *
+   * where: a = div, b = num and c = denom
+   *
+   * P1 register is an 18-bit value using following formula:
+   *
+   * 	P1[17:0] = 128 * a + floor(128*(b/c)) - 512
+   *
+   * P2 register is a 20-bit value using the following formula:
+   *
+   * 	P2[19:0] = 128 * b - c * floor(128*(b/c))
+   *
+   * P3 register is a 20-bit value using the following formula:
+   *
+   * 	P3[19:0] = c
+   */
+
+  /* Set the main PLL config registers */
+  if (num == 0)
+  {
+    /* Integer mode */
+    P1 = 128 * div - 512;
+    P2 = num;
+    P3 = denom;
+  }
+  else
+  {
+    /* Fractional mode */
+    P1 = (uint32_t)(128 * div + floor(128 * ((float)num/(float)denom)) - 512);
+    P2 = (uint32_t)(128 * num - denom * floor(128 * ((float)num/(float)denom)));
+    P3 = denom;
+  }
+
+  /* Get the appropriate starting point for the PLL registers */
+  uint8_t baseaddr = 0;
+  switch (output)
+  {
+    case 0:
+      baseaddr = SI5351_REGISTER_42_MULTISYNTH0_PARAMETERS_1;
+      break;
+    case 1:
+      baseaddr = SI5351_REGISTER_50_MULTISYNTH1_PARAMETERS_1;
+      break;
+    case 2:
+      baseaddr = SI5351_REGISTER_58_MULTISYNTH2_PARAMETERS_1;
+      break;
+  }
+
+  /* Set the MSx config registers */
+  si5351_write8( baseaddr,   (P3 & 0x0000FF00) >> 8);
+  si5351_write8( baseaddr+1, (P3 & 0x000000FF));
+  si5351_write8( baseaddr+2, (P1 & 0x00030000) >> 16);	/* ToDo: Add DIVBY4 (>150MHz) and R0 support (<500kHz) later */
+  si5351_write8( baseaddr+3, (P1 & 0x0000FF00) >> 8);
+  si5351_write8( baseaddr+4, (P1 & 0x000000FF));
+  si5351_write8( baseaddr+5, ((P3 & 0x000F0000) >> 12) | ((P2 & 0x000F0000) >> 16) );
+  si5351_write8( baseaddr+6, (P2 & 0x0000FF00) >> 8);
+  si5351_write8( baseaddr+7, (P2 & 0x000000FF));
+
+
+  if (pllSource == SI5351_PLL_A)
+  {
+          float fvco = m_si5351Config.plla_freq / (div + ( (float)num / (float)denom ));
+          switch (output)
+          {
+           case 0:
+           m_si5351Config.ms0_freq = (uint32_t)floor(fvco);
+           break;
+           case 1:
+           m_si5351Config.ms1_freq = (uint32_t)floor(fvco);
+           break;
+           case 2:
+           m_si5351Config.ms2_freq = (uint32_t)floor(fvco);
+           break;
+          }
+  }
+  else
+  {
+          float fvco = m_si5351Config.pllb_freq / (div + ( (float)num / (float)denom));
+          switch (output)
+          {
+           case 0:
+           m_si5351Config.ms0_freq = (uint32_t)floor(fvco);
+           break;
+           case 1:
+           m_si5351Config.ms1_freq = (uint32_t)floor(fvco);
+           break;
+           case 2:
+           m_si5351Config.ms2_freq = (uint32_t)floor(fvco);
+           break;
+          }
+  }
+
+
+
+  /* Configure the clk control and enable the output */
+  uint8_t clkControlReg = 0x0F;                             /* 8mA drive strength, MS0 as CLK0 source, Clock not inverted, powered up */
+  if (pllSource == SI5351_PLL_B) clkControlReg |= (1 << 5); /* Uses PLLB */
+  if (num == 0) clkControlReg |= (1 << 6);                  /* Integer mode */
+  switch (output)
+  {
+    case 0:
+      ASSERT_STATUS(si5351_write8(SI5351_REGISTER_16_CLK0_CONTROL, clkControlReg));
+      break;
+    case 1:
+      ASSERT_STATUS(si5351_write8(SI5351_REGISTER_17_CLK1_CONTROL, clkControlReg));
+      break;
+    case 2:
+      ASSERT_STATUS(si5351_write8(SI5351_REGISTER_18_CLK2_CONTROL, clkControlReg));
+      break;
+  }
+
+  return ERROR_NONE;
+}
+
+/**************************************************************************/
+/*!
+    @brief  Enables or disables all clock outputs
+*/
+/**************************************************************************/
+err_t si5351_enableOutputs(uint8_t enabled)
+{
+  /* Make sure we've called init first */
+  ASSERT(m_si5351Config.initialised, ERROR_DEVICENOTINITIALISED);
+
+  /* Enabled desired outputs (see Register 3) */
+  ASSERT_STATUS(si5351_write8(SI5351_REGISTER_3_OUTPUT_ENABLE_CONTROL, enabled ? 0x00: 0xFF));
+
+  return ERROR_NONE;
+}
+
+/* ---------------------------------------------------------------------- */
+/* PRUVATE FUNCTIONS                                                      */
+/* ---------------------------------------------------------------------- */
+
+/**************************************************************************/
+/*!
+    @brief  Writes a register and an 8 bit value over I2C
+*/
+/**************************************************************************/
+err_t si5351_write8 (uint8_t reg, uint8_t value)
+{
+	HAL_StatusTypeDef status = HAL_OK;
+
+	while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+
+    status = HAL_I2C_Mem_Write(&hi2c1,							// i2c handle
+    						  (uint8_t)(SI5351_ADDRESS<<1),		// i2c address, left aligned
+							  (uint8_t)reg,						// register address
+							  I2C_MEMADD_SIZE_8BIT,				// si5351 uses 8bit register addresses
+							  (uint8_t*)(&value),				// write returned data to this variable
+							  1,								// how many bytes to expect returned
+							  100);								// timeout
+
+  return ERROR_NONE;
+}
+
+/**************************************************************************/
+/*!
+    @brief  Reads an 8 bit value over I2C
+*/
+/**************************************************************************/
+err_t si5351_read8(uint8_t reg, uint8_t *value)
+{
+	HAL_StatusTypeDef status = HAL_OK;
+
+	while (HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(SI5351_ADDRESS<<1), 3, 100) != HAL_OK) { }
+
+    status = HAL_I2C_Mem_Read(&hi2c1,							// i2c handle
+    						  (uint8_t)(SI5351_ADDRESS<<1),		// i2c address, left aligned
+							  (uint8_t)reg,						// register address
+							  I2C_MEMADD_SIZE_8BIT,				// si5351 uses 8bit register addresses
+							  (uint8_t*)(&value),				// write returned data to this variable
+							  1,								// how many bytes to expect returned
+							  100);								// timeout
+
+  return ERROR_NONE;
+}
+
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
